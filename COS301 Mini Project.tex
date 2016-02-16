@@ -1,0 +1,231 @@
+%%% -------------------------------------------------------------------------
+%%% Assignment Template - University of Pretoria, Department of Computer Science
+%%%
+%%% based on the 'exam' document class by Philip Hirschhorn
+%%% (see exam.cls for more details).
+%%%
+%%% Template Version: 1.0
+%%% exam.cls Version: 2.4
+%%%
+%%%
+%%% Revision History
+%%%
+%%% 24-07-2012, 1.0: Ronald Klazar
+%%% - Modified the Test Template (Version 1.0) for assignments.
+%%% 10-02-2014, 1.1: Linda Marshall
+%%% - Modified the Test Template (Version 1.0) to include question titles.
+%%% -------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper]{exam}
+
+
+%% BEGIN Set up graphics
+
+\usepackage{graphicx}
+\usepackage{url}
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+% declare the path(s) where your graphic files are
+\graphicspath{{./}}
+% and their extensions so you won't have to specify these with
+% every instance of \includegraphics
+%\DeclareGraphicsExtensions{.eps}
+
+%% END Set up graphics
+
+
+%% BEGIN Article customise
+
+%% Packages
+\usepackage{multicol}
+\usepackage{fancyvrb} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{enumerate}
+
+%% Section title appearance
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+\usepackage{listings}
+\lstset{language=C++}
+
+% Reduce the size of the margins
+\extrawidth{15mm}
+
+%% END Article customise
+
+
+%% BEGIN Miscellaneous visual customisations
+\setlength{\linefillheight}{8mm}
+\setlength{\linefillthickness}{0.1pt}
+\setlength{\rightpointsmargin}{5mm}
+
+\renewcommand\thepartno{\arabic{partno}}
+\renewcommand\thesubpart{\alph{subpart}}
+\renewcommand\thesubsubpart{\roman{subsubpart}}
+\renewcommand\partlabel{\thequestion.\thepartno}
+\renewcommand\subpartlabel{\thesubpart)}
+
+% Title and particulars of the assignment
+\newcommand\mdsSubject{COS\,301}
+\newcommand\mdsLabel{Software Requirements Specication}
+
+% Question title formatting
+%\bracketedpoints
+\pointsinrightmargin
+\qformat{\large \textsf{\textbf{Section \thequestion: \thequestiontitle}} {\normalsize \dotfill }}
+
+%% END Miscellaneous visual customisations
+
+
+%% BEGIN Header setup
+
+\pagestyle{headandfoot}
+\firstpageheader{}{}{}%
+\runningheader{}{}{\textsl{\mdsSubject{} \mdsLabel: \mdsAssignmentDate}}
+\firstpagefooter{}{Page \thepage{} of \numpages}{}
+\runningfooter{}{Page \thepage{} of \numpages}{}
+
+%% END Header setup
+
+
+%% BEGIN Mark and Solution control
+
+% Comment to produce a blank test; uncomment to produce a memo
+%\printanswers
+
+% Add the points assigned to questions to produce a total for the test
+\addpoints
+
+%% END Mark and Solution control
+
+
+\begin{document}
+
+{\LARGE \textsf{\textbf{\mdsSubject{} \mdsLabel}} \hfill \includegraphics[scale=0.5]{UPLogo2012.jpg}
+}\\
+\hrule
+
+
+\vspace{0.3in}
+
+%%% -------------------------------------------------------------------------
+
+\begin{coverpages}
+		
+\end{coverpages}
+
+%%% -------------------------------------------------------------------------
+
+\section{Introduction}
+\lipsum[1]
+
+\section{Vision}
+\lipsum[2]
+
+\section{Background}
+\lipsum[3]
+
+\section{Architecture Requirements}
+\subsection{Access Channel Requirements}
+The system must be able to be accessed via the following channels:
+	\begin{itemize}
+		\item A desktop application available in the form of a \textbf{Windows (7/8/10)} client, a \textbf{Linux} client and binaries ready to be built on either system with an interactive GUI
+		\item A web version compatible with all major browsers (eg. \textit{Mozilla Firefox, Google Chrome or Opera})
+		\item A mobile application developed for Android and compatible with all current and upcoming versions thereof
+	\end{itemize}
+This will be accomplished by making use of RESTful web services (these being based on the REST, or REpresentational State Transfer architecture). The system itself will accept HTTP requests from any of these channels and create responses in the form of JSON strings, a format easily handled in any one of the aforementioned access systems.
+
+Additionally, the following additional access channels can be added:
+	\begin{itemize}
+		\item A command line (terminal) based version of the desktop application, which could be suitable for the target audience, who are very technologically capable
+		\item A mobile application developed for Windows Phone and/or iOS.
+	\end{itemize}
+	
+\subsection{Quality Requirements}
+The following assurances must be made in terms of quality:
+	\begin{itemize}
+		\item Performance
+		\begin{enumerate}
+			\item The server must always provide the minimum data required to fulfill a request. That is to say, were a user to log in to the system, the server should only send the data pertaining to that user to be displayed, no Papers related to his or her Co-Authors or other related parties. 
+			\item The system must be created with the most minimal and efficient coding practices possible, given that the result must still be reliable and robust.
+			\item No actual files are to be stored in the system, lest it negatively affect the performance components of the system itself.
+		\end{enumerate}
+		\item Reliability
+		\begin{enumerate}
+			\item The system must be thoroughly tested on both the client and server side, to ensure it will not cause faults or problems. It is important that no data is lost, thus the coding used to create the system must be defensive and thorough.
+		\end{enumerate}
+		\item Scalability
+		\begin{enumerate}
+			\item The system must be designed such that:
+			\newline
+			\textit{	a-The client is able to handle and display details of a large, potentially infinite number of Publications.
+				b-The server is able to handle, display details pertaining to large, potentially infinite number of Users, Authors and Publications.}	
+			\item Modular programming should be used in order to ensure that there are no restrictions in terms of the system's ability to be extended and improved upon at later stages.
+		\end{enumerate}
+		\item Security
+		\begin{enumerate}
+			\item It should not be possible for individuals other than the actual Users to access or modify the system. This means that security has to be ensured in terms of password storage, secure login methods and user management (methods such as re-obtaining password via email should be very carefully guarded).
+			\item It should not be possible for Users to make changes to other Users' details, as it is with non-User Authors, unless they are one of a select few Super Users or Administrators.
+			\item A publication should not be able to be removed from a system, only edited, unless it is removed by an aforementioned Super User.
+			\item A User should not be capable of viewing or editing a publication for which they are not on the list of Authors.
+		\end{enumerate}
+		\item Flexibility
+		\begin{enumerate}
+			\item The system should be capable of reacting quickly to different stimuli. This means (as an example) that if multiple users are concurrently using the system and performing vastly differing tasks which make use of completely different parts of the same system, there should not be any noticeable loss of performance.
+			\item The system should be able to perform well even under bulk loads, without loss of data on the way.
+			\item It should be possible to add new components or fields to existing components in the system without making major changes. 
+		\end{enumerate}
+		\item Maintainability
+		\begin{enumerate}
+			\item The system should be developed with current and maintained technologies, so as to avoid loss of support for as long as possible.
+			\item The system should be well documented so as to ensure future developers on the system are capable of maintaining the system without worry.
+			\item When changes are made in current technologies, the system should be updated as soon as possible to reflect relevant changes.
+			\item The modular design of the system must be such that if changes must be made to a part of the system, only that part itself should be changed.
+		\end{enumerate}
+		\item Monitorability 
+		\begin{enumerate}
+			\item \textbf{All} actions taken that have any affect on the databases stored server side are to be logged.
+			\item All logs, current connections and current activity must be viewable by the Super Users in charge of the system.
+		\end{enumerate}
+		\item Integrability
+		\begin{enumerate}
+			\item The system should be designed in such a manner (with modularity and common interfacing methods) that it is capable of having pieces or services plugged in and catered to with minimal effort, such as that of Google Calender, which could be a logical future addition to the system for the sake of deadline maintenance.
+		\end{enumerate}
+		\item Cost
+		\begin{enumerate}
+			\item The tools used to design the system should, as far as possible, be open source, free and not require a license.
+			\item In certain cases, paid and licensed software may be suitable for some individual pieces of the system, such as having a Database Management System (DBMS) to handle the storage of data as best possible.
+			\item Costs may be created in the form of external hosting for the web service and database storage, should the client desire it to be so.
+		\end{enumerate}
+		\item Usability
+		\begin{enumerate}
+			\item The Users, being staff members, must have easy access from any channel.
+			\item The system should be designed in such a manner that the interface is easy to learn and use.
+			\item The system should be minimal and avoid having unneeded visuals that could impair a User's ability to use the system comfortably.
+		\end{enumerate}
+	\end{itemize}
+
+\subsection{Integration Requirements}
+\lipsum[4]
+\subsection{Architecture Constrains}
+\lipsum[5]
+
+\section{Functional Requirements and application design}
+\subsection{Use case prioritization}
+\lipsum[6]
+\subsection{Use case/Services contracts}
+\lipsum[7]
+\subsection{Required functionality}
+\lipsum[8]
+\subsection{Process Specifications}
+\lipsum[9]
+
+\section{Open Issues}
+\lipsum[10]
+%\bibliographystyle{IEEEtran}
+%\bibliography{./assignment}
+
+\end{document}
+
