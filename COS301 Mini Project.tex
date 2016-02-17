@@ -215,7 +215,165 @@ The following assurances must be made in terms of quality:
 \section{Functional Requirements and application design}
 \subsection{Use case prioritization}
 The Use Case Prioritization will be ellaborated upon in the next section, section 5.2: Use Case/Services Contracts.
-\subsection{Use case/Services contracts}
+\subsection{ Use case/Services contracts}
+
+\begin{enumerate}
+\item  User Login : Use Case Prioritization -- Critical
+
+\begin{enumerate}
+\item  Pre-Conditions
+
+\begin{enumerate}
+\item  A user must be registered as a user by admin before he/she is able to login to the Research Paper App.
+
+\item  In order to login a user must enter in his/her correct authentication details.
+\end{enumerate}
+
+\item  Post-Conditions
+
+\begin{enumerate}
+\item  The user has access to his/her profile and publications.
+
+\item  The user may alter his/her publications.
+
+\item  The user may access only his/her profile and publications and no others.
+
+\item  A user can be an author.
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\noindent 
+
+\begin{enumerate}
+\item  Author Login : Use Case Prioritization -- Important
+
+\begin{enumerate}
+\item  Pre-Conditions
+
+\begin{enumerate}
+\item  An author must be registered by admin as an author before he/she may login to the Research Paper App.
+
+\item  In order for an author to login he/she must enter in his/her correct authentication details
+\end{enumerate}
+
+\item  Post-Conditions
+
+\begin{enumerate}
+\item  The author has access to any profile that he/she co-authored.
+
+\item  The author may not alter any publications that he/she was involved in.
+
+\item  A user can be an author, but an author cannot be a user.
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\noindent  
+
+\begin{enumerate}
+\item  Super-user/admin Login: Use Case Prioritization -- Critical
+
+\begin{enumerate}
+\item  Pre-Conditions
+
+\begin{enumerate}
+\item  A single user must be able to logon as admin or a super user.
+
+\item  In order to login a user must enter in his/her correct authentication details.
+\end{enumerate}
+
+\item  Post-Conditions
+
+\begin{enumerate}
+\item  The super-user has access to any and all user and author profiles.
+
+\item  The super-user is the only user capable of adding more users and authors.
+
+\item  The super-user can alter any profile.
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\noindent  
+
+\begin{enumerate}
+\item  User Registration: Use Case Prioritization -- Critical
+
+\begin{enumerate}
+\item  Pre-Conditions
+
+\begin{enumerate}
+\item  The admin or super-user is in charge of registering the users.
+\end{enumerate}
+
+\item  Post-Conditions
+
+\begin{enumerate}
+\item  The user receives his/her login details.
+
+\item  The user has his or her privileges set.
+
+\item  The user is registered in the user and author database table.
+
+\item  The user is able to logon to the Research Paper App with the login details supplied by the super-user/admin.
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\noindent  
+
+\begin{enumerate}
+\item  Author Registration:  Use Case Prioritization -- Important
+
+\begin{enumerate}
+\item  Pre-Conditions
+
+\begin{enumerate}
+\item  The admin or super-user is in charge of registering the authors.
+\end{enumerate}
+
+\item  Post-Conditions
+
+\begin{enumerate}
+\item  The author receives his/her login details.
+
+\item  The author has his or her privileges set.
+
+\begin{enumerate}
+\item  Can only view links of papers he/she has co-authored.
+\end{enumerate}
+
+\item  The author is registered in the author database table only.
+
+\item  The author is able to logon to the Research Paper App, as an author, with the login details supplied by admin or super-user.
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\noindent  
+
+\begin{enumerate}
+\item  Super-user/Admin Registration: Use Case Prioritization -- Critical
+
+\begin{enumerate}
+\item  Pre-Conditions
+
+\begin{enumerate}
+\item  Upon system-initialization, a single user sets him/herself to the super-user/admin.
+
+\item  This user uses his/her authentication details to log in as the super-user/admin.
+\end{enumerate}
+
+\item  Post-Conditions
+
+\begin{enumerate}
+\item  The super-user/admin can add and remove users
+
+\item  The super-user/admin can view all user and author profiles, as well as lists of publications associated with each.
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
 \subsection{Required functionality}
 \lipsum[8]
 \subsection{Process Specifications}
