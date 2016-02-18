@@ -1,0 +1,583 @@
+\documentclass[hidelinks,a4paper,12pt]{article}
+\addtolength{\oddsidemargin}{-1.cm}
+\addtolength{\textwidth}{2cm}
+\addtolength{\topmargin}{-2cm}
+\addtolength{\textheight}{3.5cm}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\makeindex
+
+\usepackage{longtable}
+\usepackage[pdftex]{graphicx}
+\usepackage{makeidx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+
+% define the title
+\author{Men-at-Work}
+\title{ Software Requirements Specification}
+\begin{document}
+\setlength{\parskip}{6pt}
+
+% generates the title
+\begin{titlepage}
+
+\begin{center}
+% Upper part of the page       
+\includegraphics[width=1\textwidth]{./up-logo.jpg}\\[0.4cm]    
+\textsc{\LARGE Department of Computer Science}\\[1.5cm]
+\textsc{\Large COS 301 - Software Engineering}\\[0.5cm]
+% Title
+\HRule \\[0.4cm]
+%%\includegraphics[width=0.05\textwidth]{./logo.png}\\[0.4cm] 
+{ \huge \bfseries Software Requirements Specification}\\[0.4cm]
+\HRule \\[0.4cm]
+% Author and supervisor
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Authors:}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Student number:}
+\end{flushright}
+\end{minipage}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+Herman {Keuris}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{}
+u13037618
+\end{flushright}
+\end{minipage}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+Johan {van Rooyen}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{}
+u11205131
+\end{flushright}
+\end{minipage}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+Estian {Rosslee}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{}
+u12223426
+\end{flushright}
+\end{minipage}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+Ivan {Henning}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{}
+u13008219
+\end{flushright}
+\end{minipage}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+Muller {Potgieter}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{}
+u12003672
+\end{flushright}
+\end{minipage}
+
+\vfill
+% Bottom of the page
+{\large \today}
+\end{center}
+\end{titlepage}
+\footnotesize
+%\input{declaration_of_originality.tex}
+\normalsize
+
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+\newpage
+\section{Introduction} This section deals with the software software requirements specification of the program. This includes:
+	\begin{itemize} 
+		\item The vision.
+		\item The background.
+		\item The access channel requirements.
+		\item The quality requirements.
+		\item The integration requirements.
+		\item The architecture requirements.
+		\item Use cases.
+		\item Required functionality.
+	\end{itemize}
+	
+\section{Vision}
+The client wishes to create a program that allows users to keep track of their own work, as well as collaborate with other users, so that they can write papers together. Users will be able to specify the progress that they have made with their papers and alter them as needed. The program will keep a full record of all changes made to the papers, in order to create a time line of events. The program will be available as a desktop and mobile application, as well as being available as a web version.
+
+\section{Background}
+\begin{enumerate}
+	\item A specialized program, aimed at research papers does not exist
+	\item It can be used as a common platform for researchers around the world to easily manage their work and collaborate more easily
+	\item It will allow researchers easier access to their work. persisting and provides access to domain objects.
+	\item It will allow researchers to keep track of their progress more easily
+	\item The program can be expanded to include researchers from other universities or scientific bodies
+\end{enumerate}
+\newpage
+
+\section{Architecture Requirements}
+	\subsection{Access Channel Requirements}
+	\begin{enumerate}
+		\item A desktop application available in the form of a Windows (7/8/10) client, a Linux client and binaries
+		ready to be built on either system with an interactive GUI
+		\item A web version compatible with all major browsers (eg. Mozilla Firefox, Google Chrome or Opera)
+		\item A mobile application developed for Android and compatible with all current and upcoming versions thereof
+	\end{enumerate}
+	
+	This will be accomplished by making use of RESTful web services (these being based on the REST, or REpresentational State Transfer architecture). The system itself will accept HTTP requests from any of these channels
+	and create responses in the form of JSON strings, a format easily handled in any one of the aforementioned access
+	systems.
+	Additionally, the following additional access channels can be added:
+	\begin{enumerate}
+		\item A command line (terminal) based version of the desktop application, which could be suitable for the target
+		audience, who are very technologically capable
+		ready to be built on either system with an interactive GUI
+		\item A mobile application developed for Windows Phone and/or iOS.
+	\end{enumerate}
+	
+\subsection{Quality Requirements}
+The following assurances must be made in terms of quality:
+\begin{itemize}
+	\item Performance
+	\begin{enumerate}
+		\item The server must always provide the minimum data required to fulfill a request. That is to say, were a user to log in to the system, the server should only send the data pertaining to that user to be displayed, no Papers related to his or her Co-Authors or other related parties. 
+		\item The system must be created with the most minimal and efficient coding practices possible, given that the result must still be reliable and robust.
+		\item No actual files are to be stored in the system, lest it negatively affect the performance components of the system itself.
+	\end{enumerate}
+	\item Reliability
+	\begin{enumerate}
+		\item The system must be thoroughly tested on both the client and server side, to ensure it will not cause faults or problems. It is important that no data is lost, thus the coding used to create the system must be defensive and thorough.
+	\end{enumerate}
+	\newpage
+	\item Scalability
+	\begin{enumerate}
+		\item The system must be designed such that:
+		\newline
+		\textit{	a-The client is able to handle and display details of a large, potentially infinite number of Publications.
+			b-The server is able to handle, display details pertaining to large, potentially infinite number of Users, Authors and Publications.}	
+		\item Modular programming should be used in order to ensure that there are no restrictions in terms of the system's ability to be extended and improved upon at later stages.
+	\end{enumerate}
+	\item Security
+	\begin{enumerate}
+		\item It should not be possible for individuals other than the actual Users to access or modify the system. This means that security has to be ensured in terms of password storage, secure login methods and user management (methods such as re-obtaining password via email should be very carefully guarded).
+		\item It should not be possible for Users to make changes to other Users' details, as it is with non-User Authors, unless they are one of a select few Super Users or Administrators.
+		\item A publication should not be able to be removed from a system, only edited, unless it is removed by an aforementioned Super User.
+		\item A User should not be capable of viewing or editing a publication for which they are not on the list of Authors.
+	\end{enumerate}
+	\item Flexibility
+	\begin{enumerate}
+		\item The system should be capable of reacting quickly to different stimuli. This means (as an example) that if multiple users are concurrently using the system and performing vastly differing tasks which make use of completely different parts of the same system, there should not be any noticeable loss of performance.
+		\item The system should be able to perform well even under bulk loads, without loss of data on the way.
+		\item It should be possible to add new components or fields to existing components in the system without making major changes. 
+	\end{enumerate}
+	\item Maintainability
+	\begin{enumerate}
+		\item The system should be developed with current and maintained technologies, so as to avoid loss of support for as long as possible.
+		\item The system should be well documented so as to ensure future developers on the system are capable of maintaining the system without worry.
+		\item When changes are made in current technologies, the system should be updated as soon as possible to reflect relevant changes.
+		\item The modular design of the system must be such that if changes must be made to a part of the system, only that part itself should be changed.
+	\end{enumerate}
+	\item Monitorability 
+	\begin{enumerate}
+		\item \textbf{All} actions taken that have any affect on the databases stored server side are to be logged.
+		\item All logs, current connections and current activity must be viewable by the Super Users in charge of the system.
+	\end{enumerate}
+	\item Integrability
+	\begin{enumerate}
+		\item The system should be designed in such a manner (with modularity and common interfacing methods) that it is capable of having pieces or services plugged in and catered to with minimal effort, such as that of Google Calender, which could be a logical future addition to the system for the sake of deadline maintenance.
+	\end{enumerate}
+	\item Cost
+	\begin{enumerate}
+		\item The tools used to design the system should, as far as possible, be open source, free and not require a license.
+		\item In certain cases, paid and licensed software may be suitable for some individual pieces of the system, such as having a Database Management System (DBMS) to handle the storage of data as best possible.
+		\item Costs may be created in the form of external hosting for the web service and database storage, should the client desire it to be so.
+	\end{enumerate}
+	\item Usability
+	\begin{enumerate}
+		\item The Users, being staff members, must have easy access from any channel.
+		\item The system should be designed in such a manner that the interface is easy to learn and use.
+		\item The system should be minimal and avoid having unneeded visuals that could impair a User's ability to use the system comfortably.
+	\end{enumerate}
+\end{itemize}
+
+		
+\subsection{Integration Requirements}
+
+\subsection{Architecture Constrains}
+
+
+\section{Functional Requirements and application design}
+	\subsection{Use case prioritisation}
+	The Use Case Prioritisation will be elaborated upon in the next section, section 5.2: Use Case/Services Contracts.
+\subsection{ Use case/Services contracts}
+
+\begin{enumerate}
+	\item  User Login : Use Case Prioritization -- Critical
+	\begin{enumerate}
+		\item  Pre-Conditions
+		\begin{enumerate}
+			\item  A user must be registered as a user by admin before he/she is able to login to the Research Paper App.
+			\item  In order to login a user must enter in his/her correct authentication details.
+		\end{enumerate}
+		\item  Post-Conditions
+		\begin{enumerate}
+			\item  The user has access to his/her profile and publications.
+			\item  The user may alter his/her publications.
+			\item  The user may access only his/her profile and publications and no others.
+			\item  A user can be an author.
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\noindent 
+
+\begin{enumerate}
+	\item  Author Login : Use Case Prioritization -- Important
+	\begin{enumerate}
+		\item  Pre-Conditions
+		\begin{enumerate}
+			\item  An author must be registered by admin as an author before he/she may login to the Research Paper App.
+			\item  In order for an author to login he/she must enter in his/her correct authentication details
+		\end{enumerate}
+		\item  Post-Conditions
+		\begin{enumerate}
+			\item  The author has access to any profile that he/she co-authored.
+			\item  The author may not alter any publications that he/she was involved in.
+			\item  A user can be an author, but an author cannot be a user.
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\noindent  
+
+\begin{enumerate}
+	\item  Super-user/admin Login: Use Case Prioritization -- Critical
+	\begin{enumerate}
+		\item  Pre-Conditions
+		\begin{enumerate}
+			\item  A single user must be able to logon as admin or a super user.
+			\item  In order to login a user must enter in his/her correct authentication details.
+		\end{enumerate}
+		
+		\item  Post-Conditions
+		\begin{enumerate}
+			\item  The super-user has access to any and all user and author profiles.
+			\item  The super-user is the only user capable of adding more users and authors.
+			\item  The super-user can alter any profile.
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\noindent  
+
+\begin{enumerate}
+	\item  User Registration: Use Case Prioritization -- Critical
+	
+	\begin{enumerate}
+		\item  Pre-Conditions
+		\begin{enumerate}
+			\item  The admin or super-user is in charge of registering the users.
+		\end{enumerate}
+		\item  Post-Conditions
+		\begin{enumerate}
+			\item  The user receives his/her login details.
+			\item  The user has his or her privileges set.
+			\item  The user is registered in the user and author database table.	
+			\item  The user is able to logon to the Research Paper App with the login details supplied by the super-user/admin.
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\noindent  
+
+\begin{enumerate}
+	\item  Author Registration:  Use Case Prioritization -- Important
+	
+	\begin{enumerate}
+		\item  Pre-Conditions
+		
+		\begin{enumerate}
+			\item  The admin or super-user is in charge of registering the authors.
+		\end{enumerate}
+		
+		\item  Post-Conditions
+		
+		\begin{enumerate}
+			\item  The author receives his/her login details.
+			
+			\item  The author has his or her privileges set.
+			
+			\begin{enumerate}
+				\item  Can only view links of papers he/she has co-authored.
+			\end{enumerate}
+			
+			\item  The author is registered in the author database table only.
+			
+			\item  The author is able to logon to the Research Paper App, as an author, with the login details supplied by admin or super-user.
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\noindent  
+
+\begin{enumerate}
+	\item  Super-user/Admin Registration: Use Case Prioritization -- Critical
+	
+	\begin{enumerate}
+		\item  Pre-Conditions
+		
+		\begin{enumerate}
+			\item  Upon system-initialization, a single user sets him/herself to the super-user/admin.
+			
+			\item  This user uses his/her authentication details to log in as the super-user/admin.
+		\end{enumerate}
+		
+		\item  Post-Conditions
+		
+		\begin{enumerate}
+			\item  The super-user/admin can add and remove users
+			
+			\item  The super-user/admin can view all user and author profiles, as well as lists of publications associated with each.
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\noindent  
+
+\begin{enumerate}
+	\item  Creating a User: Use Case Prioritization -- Critical
+	
+	\begin{enumerate}
+		\item  Pre-Conditions
+		
+		\begin{enumerate}
+			\item  Prior to a user logging into his/her profile, the super-user/admin must have created the user profile, which the user logs onto.
+			
+			\item  Upon logging in, a user must have full access to his/her profile page.
+			
+			\item  Profile page must include
+			
+			\begin{enumerate}
+				\item  Full name of user.
+				
+				\item  Contact details
+				
+				\item  Cell phone number.
+				
+				\item  Telephone number.
+				
+				\item  Email Address.
+				
+				\item  Conference for whom the user is researching.
+				
+				\item  List of links to publications.
+				
+				\item  A list of co-authors per publication (if any).
+			\end{enumerate}
+		\end{enumerate}
+		
+		\item  Post-Conditions
+		
+		\begin{enumerate}
+			\item  The user must be able to edit his/her publication list as he/she sees fit.
+			
+			\begin{enumerate}
+				\item  Adding Publications.
+				
+				\item  Removing Publications.
+			\end{enumerate}
+			
+			\item  The user may only view/edit his/her own profile and publications.
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\noindent 
+
+\begin{enumerate}
+	\item  Creating an Author: Use Case Prioritization -- Important
+	
+	\begin{enumerate}
+		\item  Pre-Conditions
+		
+		\begin{enumerate}
+			\item  Prior to the author logging into his/her profile the super-user/admin must assign him/her an author profile.
+			
+			\item  Upon logging in, the author must have full access to his/her profile.
+		\end{enumerate}
+		
+		\item  Post-Conditions
+		
+		\begin{enumerate}
+			\item  Authors may not alter publications.
+			
+			\item  Displayed on their profile will be:
+			
+			\begin{enumerate}
+				\item  Full name of the author.
+				
+				\item  Contact details
+				
+				\item  Cell phone number.
+				
+				\item  Telephone number.
+				
+				\item  Email Address.
+			\end{enumerate}
+			
+			\item  Authors will be able to see each of the publications that they co-authored.
+			
+			\begin{enumerate}
+				\item  No altering will be allowed. 
+			\end{enumerate}
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\noindent 
+\begin{enumerate}
+	\item  Creating a new publication:
+	
+	\begin{enumerate}
+		\item  Pre-Conditions
+		
+		\begin{enumerate}
+			\item  The user or super-user must provide a publication title.
+			
+			\item  The supervisor of the paper must be included.
+			
+			\item  All the authors who worked under that supervisor to co-author the paper must be listed.
+			
+			\item  A deadline must be set.
+			
+			\item  Progress of the paper must be specified.
+			
+			\begin{enumerate}
+				\item  Ongoing.
+				
+				\item  Terminated.
+				
+				\item  Completed.
+			\end{enumerate}
+		\end{enumerate}
+		
+		\item  Post-Conditions
+		
+		\begin{enumerate}
+			\item  The new publication will be viewable by the user, the super-user and all authors involved.
+			
+			\item  The publication may only be edited by the user whom created the publication, or the super-user.
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\noindent 
+
+\begin{enumerate}
+	\item  Setting the status of a publication: Use Case Prioritization -- Nice to Have
+	
+	\begin{enumerate}
+		\item  Pre-Conditions
+		
+		\begin{enumerate}
+			\item  If a user has successfully logged on, then he or she may view and alter the publications.
+		\end{enumerate}
+		
+		\item  Post-Conditions
+		
+		\begin{enumerate}
+			\item  Depending upon the status of the paper the user may alter it.
+			
+			\item  Only a user, whose privileges allow it, may edit the publication. 
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\noindent  
+
+\begin{enumerate}
+	\item  Viewing Publications As an Author: Use Case Prioritization -- Nice to Have
+	
+	\begin{enumerate}
+		\item  Pre-Conditions
+		
+		\begin{enumerate}
+			\item  Upon logging in, the author must have full access to his/her profile.
+			
+			\item  Profile page must include
+			
+			\begin{enumerate}
+				\item  Full name of user.
+				
+				\item  Contact details
+				
+				\item  Cell phone number.
+				
+				\item  Telephone number.
+				
+				\item  Email Address.
+				
+				\item  Supervisor for whom the author is researching under.
+				
+				\item  List of links to publications for which he/she has co-authored.
+			\end{enumerate}
+		\end{enumerate}
+		
+		\item  Post-Conditions
+		
+		\begin{enumerate}
+			\item  All publications that which the author has co-authored must be available to view.
+			
+			\item  Unless the author is also a user, he/she will be prohibited from altering any data  
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\subsection{Required functionality}
+
+\subsection{Process Specifications}
+
+
+\section{Open Issues}
+
+%\bibliographystyle{IEEEtran}
+%\bibliography{./assignment}
+
+\end{document}
+
+
