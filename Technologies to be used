@@ -1,0 +1,42 @@
+
+4.4 Architecture Constraints
+
+4.4.1 Technologies to be used
+
+	Since the system will be web based technologies that guide in building web pages will be 	needed, i.e.:
+
+		HTML5
+			  This is the overall language that will be used to develop the layout and functionality of the web page
+ 
+		Bootstrap
+			  This technology will be used to style the web page. Styling with this technology will reduce the work load giving us more time to work on the 				functionality of the system.
+   
+		Apache
+			We will use this as reference to how the final produced will look, since we won’t have access to the client’s server until the system is completed.
+
+		jQuery and Java Script
+			These two languages will be used for client side validation, I.e. validation of user credentials upon logging in to the system.
+
+		PHP
+			PHP will be used for validation on the server side.
+
+		SQL  
+			This technology will be used to enter information to the database. Entries will be stored separately:
+				Users
+				Authors and co-authors
+
+
+The system will also have an Android application version. The technologies that will be used are:
+
+	Android Studios
+      This will be the main technology used to build the main functionality of the system.
+
+
+      Programming languages like Java, C++ and C will be used to assist in building the Android version of the system  
+	
+		
+  
+		
+		
+
+
