@@ -208,7 +208,23 @@ The following assurances must be made in terms of quality:
 	\end{itemize}
 
 \subsection{Integration Requirements}
-\lipsum[4]
+Given that the system in question is intended to use external systems to as minimal a degree as is possible, this section will instead be dedicated to the explanation behind why focusing on Integration Requirements is in fact a detrimental procedure to this project plan.
+
+\begin{enumerate}
+	\item Firstly, it should be noted that this is a private system. This means that there is little need for a connection with any system which provides some form of linkage to a more major network of users.
+	\item The system itself is simplistic and requires no extra functionality provided by more complex external systems, as it is capable of functioning aptly with simplistic HTTP requests and a simple Object Data Type for communication. Although this could be stretched to CORBA at some stage and thus require some management of this system, as the system currently stands, it is sufficient to use basic JSON strings and work with these.
+	\item The system is personal to the degree that one may not even view more than one's own profile. What this is implying is the fact that it would be redundant to make use of extra technologies in a system which at its core is just a very small database management tool, with access only to one's own part of a database.
+\end{enumerate}
+Regarding the future, it is important to note that the system is intended to be wholly modular and adaptable, thus it should not be considered an impossibility to integrate either it into an external system, or vice versa. The focus of such an endeavour would be on ensuring this does not compromise the system in any way. To ensure this, we must ensure the following:
+\begin{enumerate}
+	\item The system is not dramatically affected by the changes made, in terms of performance. That is to say, given a new, external, system being integrated into the existing system (such as, for instance, Google Calendar), there should not be any noticeable performance drops that would hinder usage, as this would be detrimental to the system and possibly be a good reason to not perform such integrations in the first place.
+	\item The system is not to be compromised in terms of security. An example of this would be if an external system attempted to send or receive secure data via insecure means (eg. requiring raw, unencrypted data that should be sensitive).
+	\item It  should still be possible to accurately monitor all external systems that are integrated with the original system.
+	\item The external system used should not be relied on too heavily by the original system, unless adequate reliability and safety redundancies can be assured.
+	\item The external system should not compromise the ability of the original system to be used in a scalable manner (that is to say, it should not make it less efficient or plausible to use the system for larger volumes of data or users).
+\end{enumerate}
+With this in mind, the final note on this topic is as follows: The protocols and systems used along with the original system that is to be created should never be overly complex or dramatic. The system should, as a whole, remain independent and capable of being used in a modular and free manner. The reliance upon external systems should never be too high and the integration between should always be fluid and as loosely coupled as is possible.
+
 \subsection{Architecture Constrains}
 \lipsum[5]
 
