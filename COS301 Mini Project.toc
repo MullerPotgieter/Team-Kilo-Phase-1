@@ -25,4 +25,5 @@
 \contentsline {subsubsection}{\numberline {5.3.11}Locate paper data}{18}{subsubsection.5.3.11}
 \contentsline {subsubsection}{\numberline {5.3.12}Manipulate paper}{19}{subsubsection.5.3.12}
 \contentsline {subsubsection}{\numberline {5.3.13}View author list}{19}{subsubsection.5.3.13}
-\contentsline {section}{\numberline {6}Open Issues}{19}{section.6}
+\contentsline {subsection}{\numberline {5.4}Domain Model}{20}{subsection.5.4}
+\contentsline {section}{\numberline {6}Open Issues}{20}{section.6}
