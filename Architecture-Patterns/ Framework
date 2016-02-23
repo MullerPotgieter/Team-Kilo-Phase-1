@@ -1,0 +1,19 @@
+Architecture Patterns / Framework 
+
+The application will make use of a four-tier layered pattern, which consists of:
+	The Presentation layer
+	The Application layer
+	The Web Services layer
+	The Data layer
+
+The Presentation layer
+	this consists of an interface through which the users can access the application layer. This 	layer also captures the user's input, validates it and passes the information to the application 	layer.
+
+The Application layer 
+	This layer provides the back-end services of the system, ie the functionality of the system. 	Access to the web services layer is managed in this layer. The application layer may also be 	used as temporary storage when the database cannot be accessed.
+
+The Web Services layer
+	Here the information that was processed in the application layer is received and passed 	down to the database. Access to the database will be read and write. This layer is where the 	sever is situated.
+
+The Data layer
+	This layer is the actual database. The information is added to the database in this layer.
