@@ -403,11 +403,9 @@
 				\item  A user can be an author.
 			\end{enumerate}
 		\end{enumerate}
-	\end{enumerate}
-	
-	\noindent 
-	
-	\begin{enumerate}
+		
+		\noindent 
+		
 		\item  Author Login
 		
 		\begin{enumerate}
@@ -429,11 +427,9 @@
 				\item  A user can be an author, but an author cannot be a user.
 			\end{enumerate}
 		\end{enumerate}
-	\end{enumerate}
-	
-	\noindent  
-	
-	\begin{enumerate}
+		
+		\noindent  
+		
 		\item  Super-user/admin Login
 		
 		\begin{enumerate}
@@ -455,11 +451,9 @@
 				\item  The super-user can alter any profile.
 			\end{enumerate}
 		\end{enumerate}
-	\end{enumerate}
-	
-	\noindent  
-	
-	\begin{enumerate}
+		
+		\noindent  
+		
 		\item  User Registration
 		
 		\begin{enumerate}
@@ -481,11 +475,10 @@
 				\item  The user is able to logon to the Research Paper App with the login details supplied by the super-user/admin.
 			\end{enumerate}
 		\end{enumerate}
-	\end{enumerate}
-	
-	\noindent  
-	
-	\begin{enumerate}
+		
+		\noindent  
+		
+		
 		\item  Author Registration
 		
 		\begin{enumerate}
@@ -507,11 +500,9 @@
 				\item  The author is able to logon to the Research Paper App, as an author, with the login details supplied by admin or super-user.
 			\end{enumerate}
 		\end{enumerate}
-	\end{enumerate}
-	
-	\noindent  
-	
-	\begin{enumerate}
+		
+		\noindent  
+		
 		\item  Super-user/Admin Registration
 		
 		\begin{enumerate}
@@ -531,11 +522,9 @@
 				\item  The super-user/admin can view all user and author profiles, as well as lists of publications associated with each.
 			\end{enumerate}
 		\end{enumerate}
-	\end{enumerate}
-	
-	\noindent  
-	
-	\begin{enumerate}
+		
+		\noindent  
+		
 		\item  Creating a User
 		
 		\begin{enumerate}
@@ -581,11 +570,8 @@
 				\item  The user may only view/edit his/her own profile and publications.
 			\end{enumerate}
 		\end{enumerate}
-	\end{enumerate}
-	
-	\noindent 
-	
-	\begin{enumerate}
+		\noindent 
+		
 		\item  Creating an Author: Use Case Prioritization -- Important
 		
 		\begin{enumerate}
@@ -623,11 +609,10 @@
 				\end{enumerate}
 			\end{enumerate}
 		\end{enumerate}
-	\end{enumerate}
-	
-	\noindent 
-	
-	\begin{enumerate}
+		
+		\noindent 
+		
+		
 		\item  Creating a new publication:
 		
 		\begin{enumerate}
@@ -661,11 +646,9 @@
 				\item  The publication may only be edited by the user whom created the publication, or the super-user.
 			\end{enumerate}
 		\end{enumerate}
-	\end{enumerate}
-	
-	\noindent  
-	
-	\begin{enumerate}
+		
+		\noindent  
+		
 		\item  Editing a publication
 		
 		\begin{enumerate}
@@ -674,7 +657,10 @@
 			\begin{enumerate}
 				\item  User or super-user must first successfully log on.
 				
-				\item  Only the user who is the supervisor of the paper, or is an author as well as a user may edit the publication.
+				\item  Only the user who is the supervisor or owner of the paper may edit the publication.
+				\begin{itemize}
+					\item An author who happens to be a user as well as an author may not edit another user’s publication.
+				\end{itemize}
 				
 				\item  The super-user/admin may edit any profiles publication he/she wants.
 			\end{enumerate}
@@ -697,13 +683,11 @@
 				\item  Or remove the publication all together.
 			\end{enumerate}
 		\end{enumerate}
-	\end{enumerate}
-	
-	\noindent 
-	
-	\noindent 
-	
-	\begin{enumerate}
+		
+		\noindent 
+		
+		\noindent 
+		
 		\item  Setting the status of a publication
 		
 		\begin{enumerate}
@@ -721,11 +705,9 @@
 				\item  Only a user, whose privileges allow it, may edit the publication. 
 			\end{enumerate}
 		\end{enumerate}
-	\end{enumerate}
-	
-	\noindent  
-	
-	\begin{enumerate}
+		
+		\noindent  
+		
 		\item  Viewing Publications As an Author
 		
 		\begin{enumerate}
@@ -761,9 +743,13 @@
 				\item  Unless the author is also a user, he/she will be prohibited from altering any data  
 			\end{enumerate}
 		\end{enumerate}
-		
-		\item  Request and Results Data Structures
 	\end{enumerate}
+	
+	
+	
+	\begin{itemize}
+		\item  Request and Results Data Structures
+	\end{itemize}
 	
 	\includegraphics[width=1\textwidth]{./Graphs/Login.png}\\[0.4cm]  
 	
@@ -894,6 +880,9 @@
 		
 		
 		5.3.2.5 Use Case diagram
+		
+		\subsection{Domain Model}
+		\includegraphics[width=1\textwidth]{./Graphs/DomainModel.png}\\[0.4cm]
 	
 	
 	\section{Open Issues}
