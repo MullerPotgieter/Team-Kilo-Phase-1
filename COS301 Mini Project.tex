@@ -200,7 +200,7 @@
 	\begin{itemize}
 		\item Performance
 		\begin{enumerate}
-			\item The server must always provide the minimum data required to fulfill a request. That is to say, were a user to log in to the system, the server should only send the data pertaining to that user to be displayed, no Papers related to his or her Co-Authors or other related parties. 
+			\item The server must always provide the minimum data required to fulfill a request. That is to say, were a user to log in to the system, the server should only send the data pertaining to that user to be displayed, no papers related to his/her co-authors or other related parties. 
 			\item The system must be created with the most minimal and efficient coding practices possible, given that the result must still be reliable and robust.
 			\item No actual files are to be stored in the system, lest it negatively affect the performance components of the system itself.
 		\end{enumerate}
@@ -270,7 +270,7 @@
 		\item The system itself is simplistic and requires no extra functionality provided by more complex external systems, as it is capable of functioning aptly with simplistic HTTP requests and a simple Object Data Type for communication. Although this could be stretched to CORBA at a later stage and thus require some management of this system, as the system currently stands, it is sufficient to use basic JSON strings and work with these.
 		\item The system is personal to the degree that one may not view more than one's own profile. This implies that it would be redundant to make use of extra technologies, in a system which at its core is just a very small database management tool, with access only to one's own part of a database.
 	\end{enumerate}
-	Regarding the future, it is important to note that the system is intended to be wholly modular and adaptable, thus it should not be considered an impossibility to integrate either it into an external system, or vice versa. The focus of such an endeavor would be on ensuring this does not compromise the system in any way. To guard against this, we must ensure the following:
+	Regarding the future, it is important to note that the system is intended to be modular and adaptable, thus it could (possibly) be integrated into an external, or vice versa. The focus of such an endeavor would be on ensuring this does not compromise the system in any way. To guard against this, we must ensure the following:
 	\begin{enumerate}
 		\item The system is not dramatically affected by the changes made, in terms of performance. That is to say, given a new, external system being integrated into the existing system (such as e-mail notification), there should not be any noticeable performance drops that would hinder usage, as this would be detrimental to the system and possibly be a good reason to not perform such integrations in the first place.
 		\item The system is not to be compromised in terms of security. An example of this would be if an external system attempted to send or receive secure data via insecure means (eg. requiring raw, unencrypted data that should be sensitive).
@@ -282,11 +282,11 @@
 	\begin{enumerate}
 		\item The protocols and systems used along with the original system that is to be created should never be overly complex or dramatic. 
 		\item The system should, as a whole, remain independent and capable of being used in a modular and free manner. 
-		\item The reliance upon external systems should never be too high and the integration between should always be fluid and as loosely coupled as is possible.
+		\item An over reliance on external systems should be avoided and the integration between systems must be fluid and as loosely coupled as possible.
 	\end{enumerate}
 	
 	\subsection{Architecture Constrains}
-			\subsubsection{ Since the system will be web based technologies that guide in building web pages will be needed, i.e.:}
+			\subsubsection{ Since the system will be web-based, technologies that guide in building web pages will be needed, i.e.:}
 		
 		\begin{itemize} 
 			\item HTML 5
@@ -297,18 +297,18 @@
 			This technology will be used to style the web page. Styling with this technology will reduce the work load giving us more time to work on the 				functionality of the system.
 				\item Apache
 				\newline
-			We will use this as reference to how the final produced will look, since we won’t have access to the client’s server until the system is completed.	
+			We will use this as reference to how the final product will look, since we won’t have access to the client’s server until the system is completed.	
 				\item jQuery and Java Script
 				\newline
-			These two languages will be used for client side validation, I.e. validation of user credentials upon logging in to the system.	
+			These two languages will be used for client side validation, i.e. validation of user credentials upon logging in to the system.	
 				\item PHP
 				\newline
 			PHP will be used for validation on the server side.	
 				\item SQL
 				\newline  
 			This technology will be used to enter information to the database. Entries will be stored separately:
-			Users
-			Authors and co-authors
+			Users,
+			Authors and Co-Authors
 		\end{itemize}
 		
 		
@@ -332,7 +332,7 @@
 		
 			\item The Application layer 
 			\newline
-		This layer provides the back-end services of the system, ie the functionality of the system. 	Access to the web services layer is managed in this layer. The application layer may also be 	used as temporary storage when the database cannot be accessed.
+		This layer provides the back-end services of the system, i.e. the functionality of the system. 	Access to the web services layer is managed in this layer. The application layer may also be 	used as temporary storage when the database cannot be accessed.
 		
 			\item The Web Services layer
 			\newline
@@ -468,7 +468,7 @@
 			\begin{enumerate}
 				\item  The user receives his/her login details.
 				
-				\item  The user has his or her privileges set.
+				\item  The user has his/her privileges set.
 				
 				\item  The user is registered in the user and author database tables.
 				
@@ -493,7 +493,7 @@
 			\begin{enumerate}
 				\item  The author receives his/her login details.
 				
-				\item  The author has his or her privileges set.
+				\item  The author has his/her privileges set.
 				
 				\item  The author is registered in the author database table only.
 				
@@ -643,7 +643,7 @@
 			\begin{enumerate}
 				\item  The new publication will be viewable by the user, the super-user and all authors involved.
 				
-				\item  The publication may only be edited by the user whom created the publication, or the super-user.
+				\item  The publication may only be edited by the user who created the publication, or the super-user.
 			\end{enumerate}
 		\end{enumerate}
 		
@@ -694,7 +694,7 @@
 			\item  Pre-Conditions
 			
 			\begin{enumerate}
-				\item  If a user has successfully logged on, then he or she may view and alter the publications.
+				\item  If a user has successfully logged on, then he/she may view and alter the publications.
 			\end{enumerate}
 			
 			\item  Post-Conditions
@@ -729,7 +729,7 @@
 					
 					\item  Email Address.
 					
-					\item  Supervisor for whom the author is researching under.
+					\item  Supervisor who the author is researching under.
 					
 					\item  List of links to publications for which he/she has co-authored.
 				\end{enumerate}
@@ -738,7 +738,7 @@
 			\item  Post-Conditions
 			
 			\begin{enumerate}
-				\item  All publications that which the author has co-authored must be available to view.
+				\item  All publications that the author has co-authored must be available to view.
 				
 				\item  Unless the author is also a user, he/she will be prohibited from altering any data  
 			\end{enumerate}
@@ -773,9 +773,9 @@
 	and the relational database, achieving this through a 	protocol 
 	that allows multiple access (<100) to the server, at 	one time.
 	\begin{itemize}
-		\item A client is able to a log in request 
+		\item A client is able to log in a request 
 		
-		\item A client is able to send a request which goes through server 	to the database.
+		\item A client is able to send a request which goes through the server 	to the database.
 		
 		\item Conversion of request to a database query is performed.      	
 	\end{itemize}
@@ -804,10 +804,10 @@
 	
 	This process provides receiving paper data from the browser client,
 	This is a result of “pushing” the paper data to the database after    
-	It has been edited. 
+	it has been edited. 
 	
 		\begin{itemize}
-			\item Perform validation on paper if its recent.(date modified).
+			\item Perform validation on paper if it is recent.(date modified).
 			\item Replace paper data on the database, with the new one.
 		\end{itemize}
 		
@@ -831,11 +831,11 @@
 	
 		\subsubsection{User Identification}
 	
-	User Identification provides the means to get Client (User) credentials and log them in the system to their appropriate profile. 
+	User Identification provides the means to get client (user) credentials and log them in the system to their appropriate profile. 
 	
 	\begin{itemize}
-		\item User name of the client(Client browser)
-		\item User password of the Client (Client browser)
+		\item User name of the client(client browser)
+		\item User password of the client (client browser)
 		\item Validate with users in database. 
 	\end{itemize}
 	
