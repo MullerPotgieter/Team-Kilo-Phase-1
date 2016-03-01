@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.7)  25 FEB 2016 20:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.7)  1 MAR 2016 15:04
 entering extended mode
 **COS301*Mini*Project.tex
 ("C:\Users\Muller\Documents\GitHub\Team-Kilo-Phase-1\COS301 Mini Project.tex"
@@ -533,12 +533,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 895--896
  []
 
 [22 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UseCaseforManipu
-latePaper.JPG>] <./Graphs/DomainModel.png, id=486, 824.07875pt x 623.32875pt>
-File: ./Graphs/DomainModel.png Graphic file (type png)
+latePaper.JPG>]
+<./Graphs/UserRegistration.png, id=486, 524.71031pt x 577.40718pt>
+File: ./Graphs/UserRegistration.png Graphic file (type png)
 
-<use ./Graphs/DomainModel.png>
-Package pdftex.def Info: ./Graphs/DomainModel.png used on input line 903.
-(pdftex.def)             Requested size: 446.9055pt x 338.03821pt.
+<use ./Graphs/UserRegistration.png>
+Package pdftex.def Info: ./Graphs/UserRegistration.png used on input line 903.
+(pdftex.def)             Requested size: 446.9055pt x 491.80283pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 903--904
 
@@ -546,72 +547,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 903--904
 
 [23 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UseCasediagramfo
 rViewAuthorList.JPG>]
-<./Graphs/UserRegistration.png, id=491, 524.71031pt x 577.40718pt>
-File: ./Graphs/UserRegistration.png Graphic file (type png)
+<./Graphs/UserLogin.png, id=491, 477.28313pt x 577.40718pt>
+File: ./Graphs/UserLogin.png Graphic file (type png)
 
-<use ./Graphs/UserRegistration.png>
-Package pdftex.def Info: ./Graphs/UserRegistration.png used on input line 906.
-(pdftex.def)             Requested size: 446.9055pt x 491.80283pt.
+<use ./Graphs/UserLogin.png>
+Package pdftex.def Info: ./Graphs/UserLogin.png used on input line 906.
+(pdftex.def)             Requested size: 446.9055pt x 540.65712pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 906--907
 
  []
 
-[24 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/DomainModel.png 
-(PNG copy)>] <./Graphs/UserLogin.png, id=496, 477.28313pt x 577.40718pt>
-File: ./Graphs/UserLogin.png Graphic file (type png)
-
-<use ./Graphs/UserLogin.png>
-Package pdftex.def Info: ./Graphs/UserLogin.png used on input line 909.
-(pdftex.def)             Requested size: 446.9055pt x 540.65712pt.
+[24 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UserRegistration
+.png>]
+<./Graphs/CreateRemoveResearchPublication.png, id=496, 609.02531pt x 635.37375p
+t>
+File: ./Graphs/CreateRemoveResearchPublication.png Graphic file (type png)
+ <use ./Graphs/CreateRemoveResearchPublication.png>
+Package pdftex.def Info: ./Graphs/CreateRemoveResearchPublication.png used on i
+nput line 909.
+(pdftex.def)             Requested size: 446.9055pt x 466.25243pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 909--910
 
  []
 
-[25 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UserRegistration
-.png>]
-<./Graphs/CreateRemoveResearchPublication.png, id=501, 609.02531pt x 635.37375p
-t>
-File: ./Graphs/CreateRemoveResearchPublication.png Graphic file (type png)
- <use ./Graphs/CreateRemoveResearchPublication.png>
-Package pdftex.def Info: ./Graphs/CreateRemoveResearchPublication.png used on i
-nput line 912.
-(pdftex.def)             Requested size: 446.9055pt x 466.25243pt.
+[25 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UserLogin.png>]
+<./Graphs/ViewModifyResearchPublication.png, id=501, 540.51938pt x 649.67719pt>
+File: ./Graphs/ViewModifyResearchPublication.png Graphic file (type png)
+<use ./Graphs/ViewModifyResearchPublication.png>
+Package pdftex.def Info: ./Graphs/ViewModifyResearchPublication.png used on inp
+ut line 912.
+(pdftex.def)             Requested size: 446.9055pt x 537.16997pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 912--913
 
  []
 
-[26 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UserLogin.png>]
-<./Graphs/ViewModifyResearchPublication.png, id=506, 540.51938pt x 649.67719pt>
-File: ./Graphs/ViewModifyResearchPublication.png Graphic file (type png)
-<use ./Graphs/ViewModifyResearchPublication.png>
-Package pdftex.def Info: ./Graphs/ViewModifyResearchPublication.png used on inp
-ut line 915.
-(pdftex.def)             Requested size: 446.9055pt x 537.16997pt.
+[26 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/CreateRemoveRese
+archPublication.png>]
+<./Graphs/DomainModel.png, id=506, 824.07875pt x 623.32875pt>
+File: ./Graphs/DomainModel.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 915--916
+<use ./Graphs/DomainModel.png>
+Package pdftex.def Info: ./Graphs/DomainModel.png used on input line 916.
+(pdftex.def)             Requested size: 446.9055pt x 338.03821pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 916--917
 
  []
 
-[27 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/CreateRemoveRese
-archPublication.png>] [28 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/G
-raphs/ViewModifyResearchPublication.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 929.
- [29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 929.
+[27 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/ViewModifyResear
+chPublication.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 930.
+ [28 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/DomainModel.png
+ (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 930.
 
 ("C:\Users\Muller\Documents\GitHub\Team-Kilo-Phase-1\COS301 Mini Project.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 929.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 929.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 930.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 930.
 Package rerunfilecheck Info: File `COS301*Mini*Project.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 929.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 930.
  ) 
 Here is how much of TeX's memory you used:
- 5500 strings out of 493921
- 83601 string characters out of 3144874
+ 5499 strings out of 493921
+ 83584 string characters out of 3144874
  159572 words of memory out of 3000000
  8492 multiletter control sequences out of 15000+200000
  9750 words of font info for 34 fonts, out of 3000000 for 9000
@@ -623,9 +625,9 @@ public/amsfonts/cm/cmcsc10.pfb><C:/Users/Muller/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Muller/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Muller/AppD
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "COS301 Mini Project.pdf" (32 pages, 884841 bytes).
+Output written on "COS301 Mini Project.pdf" (31 pages, 884278 bytes).
 PDF statistics:
- 593 PDF objects out of 1000 (max. 8388607)
- 255 named destinations out of 1000 (max. 500000)
+ 589 PDF objects out of 1000 (max. 8388607)
+ 254 named destinations out of 1000 (max. 500000)
  368 words of extra memory for PDF output out of 10000 (max. 10000000)
 
