@@ -1,0 +1,82 @@
+\subsection{Quality Requirements}
+	The following quality requirements are in order of the most important to least important (can be changed).	
+	\subsubsection{Critical:}
+	\subsubsection*{Usability}
+	The average individual should be able to use the OnlyRugby app without any prior training and not be discouraged from using the system again.
+	\begin{itemize}
+		\item The OnlyRugby app's interface must be efficient, easy to use, and intuitive to navigate. To accomplish this the interface should be kept minimalistic and logical to allow the user to easily identify and use the services provided by the app.
+		\item Initially only English needs to be supported, however the system must allow for translations to other internationally spoken languages (To allow for an increased user base once the system is made available for regions outside South Africa)
+		\item Usability tests will involve typical users using the OnlyRugby app in a realistic (yet simulated) environment. Tests will be recorded on video as this medium provides task completion time and allows for observation of the user's behaviour, emotions, and difficulties while using the app.
+	\end{itemize}
+	
+	\subsubsection*{Scalability}
+	Since the system is planned to be made available for use internationally, it is vital to the success of the system that a large number of users can be accommodated.
+	\begin{itemize}
+		\item Management of resources available to the app across a range of Android devices needs to scale to ensure that every user of the OnlyRugby app will be presented with a satisfactory experience.
+		\item The system must be able to operate effectively under the load of one user per team for all teams that are registered on the OnlyRugby social platform. (Ball park figure of ~1500 after complete deployment in South Africa, 1526 clubs registered with the Rugby Union of South Africa)
+	\end{itemize}
+
+	\subsubsection{Important:}
+
+	\subsubsection*{Availability}
+	Due to the live data capturing requirements of the application and the future planned international release it is important that the OnlyRugby system is always accessible to the user, at the very least during all rugby games registered on the OnlyRugby social platform.
+	\begin{itemize}
+		\item The OnlyRugby app must be accessible on the multitude of android devices running Android 4.0 and above.
+		\item Data should be captured and stored locally before being pushed to the server in order to avoid data loss should the device being used lose connection to the server for any reason. This way even if the server is down the core functionality of the app is still usable.
+	\end{itemize}
+
+	\subsubsection*{Integrability}
+	The system must be able to communicate with the OnlyRugby social platform.
+	\begin{itemize}
+		\item Must integrate with the social platform's database concerning teams, players, and scheduled games for retrieval of display information. If communication is not possible (e.g. a loss of data connection) then default/place-holder values (e.g. Team 1, Player number 23) should be used for local storage and replaced with actual data once the connection is restored, but before data is pushed to the server.
+	\end{itemize}
+	\subsubsection*{Maintainability}
+	The OnlyRugby app system must be maintained to keep the system in a continual safe operating state.
+	\begin{itemize}
+		\item Should the system go down then it will be rolled back to a previous state in which the system was safe. This lets us recover from an error or a system fault.
+		\item Corrective maintenance is implemented to correct discovered problems in the system after the system has broken. This is the most expensive form of maintenance.
+		\item Preventative maintenance is implemented to correct discovered problems in the system after the system has been implemented but before the system breaks down.
+	\end{itemize}
+	
+	\subsubsection*{Testability}
+	All the different modules of the OnlyRugby app system must be tested thoroughly before they are integrated and deployed in the final system.
+	\begin{itemize}
+		\item Each service provided by the system must be testable through a unit test that tests:
+		\begin{itemize}
+			\item That the service is provided if all pre-conditions specified in the service contract are met.
+			\item That all post-conditions specified in the service contract hold true once the service has been provided.
+		\end{itemize}
+	\end{itemize}
+	
+	\subsubsection*{Monitorability and Auditability}
+	User activities should be logged so that they can be audited at a later stage. Each action on the system must be recorded in an audit log that can be viewed and queried at a later date should the necessity to do so arise.
+	Information to be recorded must include:
+	\begin{itemize}
+		\item The identity of the individual carrying out the action.
+		\item A summary description of the action.
+		\item A timestamp indicating when action was performed.
+	\end{itemize}
+	
+	Other information may be logged which may provide useful statistical information about the system while in use. Examples of such data to be logged might include:
+	\begin{itemize}
+		\item Location data.
+		\item Failure to communicate with server.
+		\item How long data was kept in local storage before being pushed to the server successfully.
+		\item Miscellaneous errors.
+	\end{itemize}
+	
+	\subsubsection{Nice to have:}
+	
+	\subsubsection*{Security}
+	All system functionality is accessible to users who can be successfully authenticated against the user database. If connection to the server is not available functionality will be granted in a guest mode and the user will be asked to authenticate prior to the data being pushed to the server upon re-establishment of connection.
+	\begin{itemize}
+		\item All communication of sensitive data must be done securely through encryption and secure channels.
+	\end{itemize}
+	
+	\subsubsection*{Performance requirements}	
+	Long delays cause user frustration, may lead users to believe the system is not functioning, or that input has been ignored. To prevent this it is necessary to minimize the response time of user input to the system to ensure that the system works efficiently in real time.
+	\begin{itemize}
+		\item Performance will be measured with a scale of user frustration.
+		\item Steps on the scale indicate how long a service takes to respond to the user.
+		\item The three steps to be used are 0.1s, 1s, and 10s.
+	\end{itemize}

@@ -1,0 +1,2068 @@
+#LyX file created by tex2lyx 2.1
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\addtolength{\oddsidemargin}{-1.cm}
+\addtolength{\textwidth}{2cm}
+\addtolength{\topmargin}{-2cm}
+\addtolength{\textheight}{3.5cm}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+
+\usepackage{longtable}
+\usepackage[pdftex]{graphicx}
+\usepackage{makeidx}
+
+
+
+% define the title
+\author{Men-at-Work}
+\title{ OnlyRugby Architectural Requirements}
+
+\end_preamble
+\options hidelinks
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks 0
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 0
+\pdf_colorlinks 1
+\pdf_backref section
+\pdf_pdfusetitle 0
+\pdf_quoted_options "linkcolor=blue,filecolor=magenta,urlcolor=cyan,"
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setlength{
+\backslash
+parskip}{6pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% generates the title
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Upper part of the page       
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Graphics 
+	filename up-logo.jpg
+	width 100text%
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+[0.4cm]
+\end_layout
+
+\end_inset
+
+ 
+\shape smallcaps
+
+\size largest
+Department of Computer Science
+\shape default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+[1.5cm]
+\end_layout
+
+\end_inset
+
+ 
+\shape smallcaps
+
+\size larger
+COS 301 - Software Engineering
+\shape default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+[0.5cm]
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Title
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+HRule
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+[0.4cm]
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename logo.png
+	width 5text%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+ 
+\size huge
+
+\series bold
+OnlyRugby
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename logo.png
+	width 5text%
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+[0.4cm]
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+ 
+\size huge
+
+\series bold
+Architectural Requirements
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+[0.4cm]
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+HRule
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+[0.4cm]
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Author and supervisor
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+
+\size large
+
+\emph on
+Authors:
+\emph default
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+
+\size large
+
+\emph on
+Student number:
+\emph default
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+
+\size large
+Herman 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Keuris
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+
+\size large
+
+\emph on
+
+\emph default
+ u13037618 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+
+\size large
+Johan 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+van Rooyen
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+
+\size large
+
+\emph on
+
+\emph default
+ u11205131 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+
+\size large
+Estian 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Rosslee
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+
+\size large
+
+\emph on
+
+\emph default
+ u12223426 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+
+\size large
+Ivan 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Henning
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+
+\size large
+
+\emph on
+
+\emph default
+ u13008219 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+
+\size large
+Muller 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Potgieter
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+
+\size large
+
+\emph on
+
+\emph default
+ u12003672 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\size large
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\size default
+ 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+ 
+\size footnotesize
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+input{declaration_of_originality.tex}
+\end_layout
+
+\end_inset
+
+
+\size normal
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+pagenumbering{roman}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\size default
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+This section deals with the software architecture requirements of the OnlyRugby App. This includes: 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+The architectural scope. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Quality requirements. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+The integration and access channel requirements. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+The architectural constraints. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Architectural patterns and styles used. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+The architectural tactics and strategies used. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+The use of reference architectures and frameworks. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Access and integration channels. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Technologies used. 
+\end_layout
+
+\begin_layout Section
+Architecture Requirements
+\end_layout
+
+\begin_layout Subsection
+Architectural Scope
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The following responsibilities need to be addressed by the software architecture: 
+\end_layout
+
+\begin_layout Enumerate
+
+\size normal
+To be able to host and provide an execution environment for the services/business logic of the system. 
+\end_layout
+
+\begin_layout Enumerate
+
+\size normal
+To provide an infrastructure that provides a mobile access channel 
+\end_layout
+
+\begin_layout Enumerate
+
+\size normal
+To provide an infrastructure that handles both local and remote persisting and provides access to domain objects. 
+\end_layout
+
+\begin_layout Enumerate
+
+\size normal
+To integrate with the OnlyRugby social platform's MySQL database 
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\size default
+
+\end_layout
+
+\begin_layout Subsection
+Quality Requirements
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The following quality requirements are in order from the most important to least important (subject to change as the project progresses). 
+\size default
+
+\end_layout
+
+\begin_layout Subsubsection
+Critical:
+\end_layout
+
+\begin_layout Subsubsection*
+Usability
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The average individual should be able to use the OnlyRugby app without any prior training and not be discouraged from using the system again. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+The OnlyRugby app's interface must be efficient, easy to use, and intuitive to navigate. To accomplish this the interface should be kept minimalistic and logical to allow the user to easily identify and use the services provided by the app. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Usability tests will involve typical users using the OnlyRugby app in a realistic (yet simulated) environment. Tests will be recorded on video as this medium provides task completion time and allows for observation of the user's behaviour, emotions, and difficulties while using the app. 
+\end_layout
+
+\begin_layout Subsubsection*
+Scalability
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Since the system is planned to be made available for use internationally, it is vital to the success of the system that a large number of users can be accommodated. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Management of resources available to the app across a range of Android devices needs to scale to ensure that every user of the OnlyRugby app will be presented with a satisfactory experience. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+The system must be able to operate effectively under the load of one user per team for all teams that are registered on the OnlyRugby social platform. (Ball park figure of 
+\begin_inset space ~
+
+\end_inset
+
+1500 after complete deployment in South Africa, 1526 clubs registered with the Rugby Union of South Africa) 
+\end_layout
+
+\begin_layout Subsubsection
+Important:
+\end_layout
+
+\begin_layout Subsubsection*
+Availability
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Due to the live data capturing requirements of the application and the future planned international release it is important that the OnlyRugby system is always accessible to the user, at the very least during all rugby games registered on the OnlyRugby social platform. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+The OnlyRugby app must be accessible on the multitude of android devices running Android 4.0 and above. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Data should be captured and stored locally before being pushed to the server in order to avoid data loss should the device being used lose connection to the server for any reason. This way even if the server is down the core functionality of the app is still usable. 
+\end_layout
+
+\begin_layout Subsubsection*
+Integrability
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The system must be able to communicate with the OnlyRugby social platform. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Must integrate with the social platform's database concerning teams, players, and scheduled games for retrieval of display information. If communication is not possible (e.g. a loss of data connection) then default/place-holder values (e.g. Team 1, Player number 23) should be used for local storage and replaced with actual data once the connection is restored, but before data is pushed to the server. 
+\end_layout
+
+\begin_layout Subsubsection*
+Maintainability
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The OnlyRugby app system must be maintained to keep the system in a continual safe operating state. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Should the system go down then it will be rolled back to a previous state in which the system was safe. This lets us recover from an error or a system fault. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Corrective maintenance is implemented to correct discovered problems in the system after the system has broken. This is the most expensive form of maintenance. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Preventative maintenance is implemented to correct discovered problems in the system after the system has been implemented but before the system breaks down. 
+\end_layout
+
+\begin_layout Subsubsection*
+Testability
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+All the different modules of the OnlyRugby app system must be tested thoroughly before they are integrated and deployed in the final system. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Each service provided by the system must be testable through a unit test that tests: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size normal
+That the service is provided if all pre-conditions specified in the service contract are met. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+That all post-conditions specified in the service contract hold true once the service has been provided. 
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+Monitorability and Auditability
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+User activities should be logged so that they can be audited at a later stage. Each action on the system must be recorded in an audit log that can be viewed and queried at a later date should the necessity to do so arise. Information to be recorded must include: 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+The identity of the individual carrying out the action. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+A summary description of the action. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+A timestamp indicating when action was performed. 
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Other information may be logged which may provide useful statistical information about the system while in use. Examples of such data to be logged might include: 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Location data. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Failure to communicate with server. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+How long data was kept in local storage before being pushed to the server successfully. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Miscellaneous errors. 
+\end_layout
+
+\begin_layout Subsubsection
+Nice to have:
+\end_layout
+
+\begin_layout Subsubsection*
+Usability
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Initially only English needs to be supported, however the system must allow for translations to other internationally spoken languages (To allow for an increased user base once the system is made available for regions outside South Africa)
+\end_layout
+
+\begin_layout Subsubsection*
+Security
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+All system functionality is accessible to users who can be successfully authenticated against the user database. If connection to the server is not available functionality will be granted in a guest mode and the user will be asked to authenticate prior to the data being pushed to the server upon re-establishment of connection. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Using tokens for persistent login will aid in the identification of users as well as increase the usability of the system by not being forced to log in with every use. 
+\end_layout
+
+\begin_layout Subsubsection*
+Performance requirements
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Long delays cause user frustration, may lead users to believe the system is not functioning, or that input has been ignored. To prevent this it is necessary to minimize the response time of user input to the system to ensure that the system works efficiently in real time. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Performance will be measured with a scale of user frustration. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Steps on the scale indicate how long a service takes to respond to the user. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+The three steps to be used are 0.1s, 1s, and 10s. 
+\end_layout
+
+\begin_layout Subsection
+Architectural Constraints
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The following architecture constraints have been imposed by the client: 
+\end_layout
+
+\begin_layout Enumerate
+
+\size normal
+The system must be developed using the following technologies 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size normal
+Laravel PHP framework 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Google's Material Design 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Android 4.0+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+SQLite (For the database on the device itself) 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+MySQL (For the database on the main server) 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\size normal
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\size default
+
+\end_layout
+
+\begin_layout Section
+Architecture Patterns or Styles
+\end_layout
+
+\begin_layout Subsection
+Layered Architectural Strategy
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The OnlyRugby application will make use of a 4-tier layered pattern, as explained below: 
+\end_layout
+
+\begin_layout Enumerate
+
+\size normal
+Presentation Layer: The Presentation Layer is comprised of two main aspects: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size normal
+Interface: Provides an interface/front-end through which users/clients can access and interact with the Application Layer. 
+\end_layout
+
+\begin_layout Enumerate
+
+\size normal
+Client Data Access: Captures the client's input and and passes it on to the Application Layer. Also responsible for validating input (but not for authentication). 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size normal
+Application Layer: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size normal
+Provides back-end services of the system (i.e. all functions and forms of data processing/manipulation). 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Manages access to the web-services layer. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Manages client login authentication. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Manages persistence to the main database. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+If the app can not currently reach the database then this layer will provide a space to temporarily store all relevant data which needs to be uploaded to the database at a later time. 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size normal
+Web-services Layer: This layer is where the server is situated. 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size normal
+Receives the processed client input from the Application Layer and adds it to the database (i.e. allows reading from- and writing to database). 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Provides other server-side computation/services such as: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size normal
+Conflict resolution when two different clients upload contradicting match statistics. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Sending emails to clients (for example when registering with OnlyRugby). 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\size normal
+Data Layer: This layer is where the database is situated. 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size normal
+Stores all added information, even when the client is not communicating with the database (i.e. persists data). 
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+
+\size normal
+Reasons for choosing a layered architecture: 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Complexity is reduced by abstracting and separating a number of well defined layers which are then weakly coupled with each other. This allows the responsibilities of the system to be divided between the different layers and can prevent certain aspects of the system from becoming too dependant on (or needlessly intertwined with) another aspect of the system. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+It allows for the possibility of layers, at times, being re-used across the system (for example the Presentation Layer relies on the Application Layer to verify all input whereas the Web-services Layer relies on the Application Layer to format the input so that it could be stored in the database). 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Separating certain aspects (such as interface and implementation) makes it easier to separate test different parts of the system. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+The reduced dependency of various parts of the system on each other will also improve maintainability as it allows parts of the system to be updated without requiring any unnecessary changes to other parts of the system. 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size normal
+
+\begin_inset Graphics 
+	filename 4-layered-pattern.jpg
+	width 50text%
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+[0.4cm]
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\size normal
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\size default
+
+\end_layout
+
+\begin_layout Section
+Architectural strategies and tactics
+\end_layout
+
+\begin_layout Enumerate
+
+\size normal
+Authorization: The user's profile on the application is authorized against the one on the database. JSON web tokens are passed between the application and the database. These tokens are very small, but can contain all the relevant data that needs to be passed. Making use of these tokens enables the database not to be burdened with keeping sessions. These tokens are widely used, as they can be easily authorized and encrypted.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size normal
+The quality requirements addressed: 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Performance: Because the tokens are small, thus it's easy and quick to process. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Security: By encrypting the tokens and authorizing the user, private information can be protected. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Auditability and Testability: Sending the information in these tokens will make it easier to see if the correct data was passed. 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size normal
+Queuing and scheduling: Queuing and scheduling can be used to maximize the performance of the application and the server. As new requests are received, they are placed into a queue and sequentially processed. This will assure fairness and that requests are processed in order. This will also be used if a user does not have internet access, but wishes to load new statistics. The data will be queued, until it can be sent.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size normal
+The quality requirements addressed: 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Availability, by optimizing the processing of the requests. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Reliability and Auditability. This way, the order in which requests are processed can be guaranteed. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Auditability and Testability: Sending the information in these tokens will make it easier to see if the correct data was passed. 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size normal
+Ping / Echo: Ping is a computer network administration software utility used to test the reachability of a host on an Internet Protocol (IP) network and to measure the round-trip time for messages sent from the originating host to a destination computer and back. By having the application send these pings on a regular basis, perhaps daily and when the user logs in, to the database, it can ensure that it still has access to the central server and that it is up to date with both the latest statistics, as well as the newest version of the application.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size normal
+The quality requirements addressed: 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Security. As it can ensure that all its security policies are up to date and that it can report any faults/errors. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Availability. It will inform the user if it was unable to reach the server. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Reliability. Any issues that arise may be reported and it ensures that a connection is available. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Monitorability and Audibility. It can log faults detected. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Testability. It will allow us to test the connection to the server and that it can make use of said connection. 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size normal
+Message integrity: We will be exchanging JSON objects between the server and the application. These files will include any new data that either party may need. By including a checksum, these files can be checked for any errors that may have occurred during transportation. Should it find a checksum error, a request will be send and a new JSON object will be transmitted.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size normal
+The quality requirements addressed: 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Security. This will help to protect the system from corrupted data that may hamper the application and/or server's functionality. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Reliability: This will help ensure that erroneous data is not used. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Monitorability and Auditability: It will allow the system to test if the application and/or server occasionally sends erroneous data and address the issue. 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size normal
+Multi-Threading: By using multiple threads, the application can process a larger amount of data simultaneously. While the user may be busy updating a game's statistics, the application will assign another thread to process any incoming requests, improving the program's overall performance. Networking tasks and queries are being done in background threads, preventing a bottleneck in the system.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size normal
+The quality requirements addressed: 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Performance. It will be able to process more data, simultaneously. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Flexibility. By creating new threads, the program will be able to handle multiple tasks more easily. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Usability. By keeping the user unaware of any background actions that are taking place, it will be easier for them to use the app. 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Use of reference architectures and frameworks
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The reference architecture that will be used is Java Platform Enterprise Edition. This architecture was chosen because our system is based on a layered architecture. The server framework that will be used is the Laravel PHP Framework as we will have a RESTful web service.
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Access and integration channels
+\end_layout
+
+\begin_layout Subsection
+Human access channels
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Must be able to access services through the OnlyRugby application installed on tablets and phones running Android 4.0+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+The user can easily use the OnlyRugby application to communicate with the server (when registering, logging on and off of their profiles) and through the server they can communicate with the MySQL database. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Quality requirements addressed: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size normal
+Availability 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Usability 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+System access channels
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The OnlyRugby App system can only be directly accessed through a web page (i.e. using http) using the RESTful API provided by the server. 
+\begin_inset Newline newline
+\end_inset
+
+ Quality requirements addressed: 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Security 
+\end_layout
+
+\begin_layout Subsection
+Integration Channel Used
+\end_layout
+
+\begin_layout Subsubsection
+REST - Representational State Transfer
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Uses standard HTTP and thus simpler to use. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Allows different data formats whereas SOAP only allows XML. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Has JSON support (faster parsing than XML). 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Better performance and scalability with the ability to cache reads. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Protocol Independent, can use any protocol which has a standardised Uniform Resource Identifier (URI) scheme. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Quality requirements addressed: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size normal
+Integrability 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Maintainability 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Protocols
+\end_layout
+
+\begin_layout Subsubsection
+HTTP - Hypertext Transfer Protocol
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Used to respond to requests and transfer data 
+\end_layout
+
+\begin_layout Subsubsection
+IP - Internet Protocol
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Allows communications between client and server 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+In charge of sending, receiving and addressing data packets. 
+\end_layout
+
+\begin_layout Subsubsection
+SMTP - Simple Mail Transfer Protocol
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Used to send emails (useful for registration confirmation and password reset services) 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+MIME (Multi-purpose Internet Mail Extensions) which allows SMTP to send multimedia files. 
+\end_layout
+
+\begin_layout Subsubsection
+TSL - Transport Layer Security
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Alternative to SSL. 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Newer and more secure version of SSL. 
+\end_layout
+
+\begin_layout Section
+Technologies
+\end_layout
+
+\begin_layout Subsection
+Programming technologies
+\end_layout
+
+\begin_layout Subsubsection
+Android Studio
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Android studio will be used as the IDE and the app will be backwards compatible from Android 4.0. 
+\size default
+
+\end_layout
+
+\begin_layout Subsubsection
+MySQL
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+MySQL will be used for the web server database. 
+\size default
+
+\end_layout
+
+\begin_layout Subsubsection
+SQLite
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+SQLite will be used for the device's database. 
+\size default
+
+\end_layout
+
+\begin_layout Subsection
+Web technologies
+\end_layout
+
+\begin_layout Subsubsection
+RESTful web service
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Laravel PHP framework will be used to create a RESTful web API to interact with the web server database and provide data persistence
+\end_layout
+
+\end_body
+\end_document
