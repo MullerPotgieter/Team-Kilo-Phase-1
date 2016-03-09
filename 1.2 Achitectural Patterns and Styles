@@ -1,0 +1,15 @@
+1.2 Architectural Patterns and Styles
+This section describes the architectural patterns that will be employed by the project.
+Some will be implicitly employed by the system as the system is being development.
+
+  1.2.1 MVC Architecture 
+This Architecture allows changing a system’s state, aided with the logical separation
+of concerns; thus facilitating a consistent interface to subsystems that are responsible for different tasks.
+The Model is interconnected with the Control, which is presented as an interface. The MVC can be broken down into 3 components.
+
+  1.2.1.1 Model The model is the data storage (paper) component of the system and provides functionality 
+  necessary to store data and perform CRUD operations on it, Database dependent.
+
+  1.2.1.2 View The view is the outcome presented to the user, through the browser client and is delivered through the controller.
+
+1.2.1.3 Controller The Controller is the controlling mechanism in the system which provides functionality and updates to the views of the system. Controller 
