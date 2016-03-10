@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.7)  1 MAR 2016 15:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.7)  10 MAR 2016 22:02
 entering extended mode
 **COS301*Mini*Project.tex
 ("C:\Users\Muller\Documents\GitHub\Team-Kilo-Phase-1\COS301 Mini Project.tex"
@@ -285,7 +285,7 @@ LaTeX Info: Redefining \nameref on input line 24.
 ("C:\Users\Muller\Documents\GitHub\Team-Kilo-Phase-1\COS301 Mini Project.out")
 \@outlinefile=\write4
 
-<./Graphs/UPLogo2012.jpg, id=139, 323.0469pt x 85.7604pt>
+<./Graphs/UPLogo2012.jpg, id=235, 323.0469pt x 85.7604pt>
 File: ./Graphs/UPLogo2012.jpg Graphic file (type jpg)
 
 <use ./Graphs/UPLogo2012.jpg>
@@ -305,19 +305,19 @@ uller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UPLogo2012.jpg>]
 [1])
 \tf@toc=\write5
  [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 155.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 154.
 
 
 ("C:\Users\Muller\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 155.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 154.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.176 	\newpage
+l.175 	\newpage
                 [1] [2] [3] [4] [5]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -330,78 +330,78 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
  [10]
-<./Graphs/Login.png, id=393, 682.80093pt x 418.56375pt>
+<./Graphs/Login.png, id=513, 682.80093pt x 418.56375pt>
 File: ./Graphs/Login.png Graphic file (type png)
 
 <use ./Graphs/Login.png>
-Package pdftex.def Info: ./Graphs/Login.png used on input line 754.
+Package pdftex.def Info: ./Graphs/Login.png used on input line 753.
 (pdftex.def)             Requested size: 446.9055pt x 273.96007pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 754--755
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 753--754
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--755
+Underfull \hbox (badness 10000) in paragraph at lines 753--754
 
  []
 
-[11] <./Graphs/Posting.png, id=428, 685.8122pt x 422.32782pt>
+[11] <./Graphs/Posting.png, id=548, 685.8122pt x 422.32782pt>
 File: ./Graphs/Posting.png Graphic file (type png)
 
 <use ./Graphs/Posting.png>
-Package pdftex.def Info: ./Graphs/Posting.png used on input line 758.
+Package pdftex.def Info: ./Graphs/Posting.png used on input line 757.
 (pdftex.def)             Requested size: 446.9055pt x 275.21869pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 758--759
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 757--758
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--759
+Underfull \hbox (badness 10000) in paragraph at lines 757--758
 
  []
 
-<./Graphs/Registration.png, id=429, 688.82344pt x 415.5525pt>
+<./Graphs/Registration.png, id=549, 688.82344pt x 415.5525pt>
 File: ./Graphs/Registration.png Graphic file (type png)
 
 <use ./Graphs/Registration.png>
-Package pdftex.def Info: ./Graphs/Registration.png used on input line 763.
+Package pdftex.def Info: ./Graphs/Registration.png used on input line 762.
 (pdftex.def)             Requested size: 446.9055pt x 269.61134pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 763--765
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 762--764
 [][] 
  []
 
 [12 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/Login.png> <C:/U
 sers/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/Posting.png>]
-Overfull \hbox (12.18834pt too wide) in paragraph at lines 772--775
+Overfull \hbox (12.18834pt too wide) in paragraph at lines 771--774
 \OT1/cmr/m/n/12 This con-nec-tion pro-vides com-mu-ni-ca-tion be-tween client, 
 server and the re-la-tional database,
  []
 
-<./Graphs/UseCaseforConnection.JPG, id=434, 467.49657pt x 386.19281pt>
+<./Graphs/UseCaseforConnection.JPG, id=554, 467.49657pt x 386.19281pt>
 File: ./Graphs/UseCaseforConnection.JPG Graphic file (type jpg)
 
 <use ./Graphs/UseCaseforConnection.JPG>
 Package pdftex.def Info: ./Graphs/UseCaseforConnection.JPG used on input line 7
-83.
+82.
 (pdftex.def)             Requested size: 446.9055pt x 369.20284pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 783--785
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 782--784
 [][] 
  []
 
 [13 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/Registration.png
->] <./Graphs/UseCaseforSendPaper.JPG, id=439, 461.47406pt x 380.17032pt>
+>] <./Graphs/UseCaseforSendPaper.JPG, id=559, 461.47406pt x 380.17032pt>
 File: ./Graphs/UseCaseforSendPaper.JPG Graphic file (type jpg)
 
 <use ./Graphs/UseCaseforSendPaper.JPG>
 Package pdftex.def Info: ./Graphs/UseCaseforSendPaper.JPG used on input line 80
-6.
+5.
 (pdftex.def)             Requested size: 446.9055pt x 368.16727pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 806--808
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 805--807
 [][] 
  []
 
@@ -413,209 +413,262 @@ Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- <./Graphs/UseCaseforGetpaper.JPG, id=444, 464.4853pt x 380.17032pt>
+ <./Graphs/UseCaseforGetpaper.JPG, id=564, 464.4853pt x 380.17032pt>
 File: ./Graphs/UseCaseforGetpaper.JPG Graphic file (type jpg)
 
 <use ./Graphs/UseCaseforGetpaper.JPG>
-Package pdftex.def Info: ./Graphs/UseCaseforGetpaper.JPG used on input line 820
+Package pdftex.def Info: ./Graphs/UseCaseforGetpaper.JPG used on input line 819
 .
 (pdftex.def)             Requested size: 446.9055pt x 365.7889pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 820--822
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 819--821
 [][] 
  []
 
 [15 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UseCaseforSendPa
 per.JPG>]
-<./Graphs/UseCaseforAuthorList.JPG, id=449, 462.22687pt x 382.42876pt>
+<./Graphs/UseCaseforAuthorList.JPG, id=569, 462.22687pt x 382.42876pt>
 File: ./Graphs/UseCaseforAuthorList.JPG Graphic file (type jpg)
 
 <use ./Graphs/UseCaseforAuthorList.JPG>
 Package pdftex.def Info: ./Graphs/UseCaseforAuthorList.JPG used on input line 8
-33.
+32.
 (pdftex.def)             Requested size: 446.9055pt x 369.75334pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 833--834
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 832--833
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 833--834
+Underfull \hbox (badness 10000) in paragraph at lines 832--833
 
  []
 
 [16 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UseCaseforGetpap
 er.JPG>]
-<./Graphs/UseCaseforUserIdentification.JPG, id=455, 462.22687pt x 381.67593pt>
+<./Graphs/UseCaseforUserIdentification.JPG, id=575, 462.22687pt x 381.67593pt>
 File: ./Graphs/UseCaseforUserIdentification.JPG Graphic file (type jpg)
 
 <use ./Graphs/UseCaseforUserIdentification.JPG>
 Package pdftex.def Info: ./Graphs/UseCaseforUserIdentification.JPG used on inpu
-t line 849.
+t line 848.
 (pdftex.def)             Requested size: 446.9055pt x 369.02548pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 849--851
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 848--850
 [][] 
  []
 
 [17 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UseCaseforAuthor
 List.JPG>]
-<./Graphs/UseCaseforConnection.jpg, id=460, 467.49657pt x 386.19281pt>
+<./Graphs/UseCaseforConnection.jpg, id=580, 467.49657pt x 386.19281pt>
 File: ./Graphs/UseCaseforConnection.jpg Graphic file (type jpg)
 
 <use ./Graphs/UseCaseforConnection.jpg>
 Package pdftex.def Info: ./Graphs/UseCaseforConnection.jpg used on input line 8
-54.
+53.
 (pdftex.def)             Requested size: 446.9055pt x 369.20284pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 854--855
+Underfull \hbox (badness 10000) in paragraph at lines 853--854
 
  []
 
 [18 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UseCaseforUserId
 entification.JPG>]
-<./Graphs/UseCaseforLogIn.JPG, id=465, 459.96844pt x 382.42876pt>
+<./Graphs/UseCaseforLogIn.JPG, id=585, 459.96844pt x 382.42876pt>
 File: ./Graphs/UseCaseforLogIn.JPG Graphic file (type jpg)
 
 <use ./Graphs/UseCaseforLogIn.JPG>
-Package pdftex.def Info: ./Graphs/UseCaseforLogIn.JPG used on input line 871.
+Package pdftex.def Info: ./Graphs/UseCaseforLogIn.JPG used on input line 870.
 (pdftex.def)             Requested size: 446.9055pt x 371.59149pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 871--873
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 870--872
 [][] 
  []
 
 [19 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UseCaseforConnec
 tion.jpg>]
-<./Graphs/UseCaseDiagramforLocatePaper.JPG, id=470, 460.72125pt x 382.42876pt>
+<./Graphs/UseCaseDiagramforLocatePaper.JPG, id=590, 460.72125pt x 382.42876pt>
 File: ./Graphs/UseCaseDiagramforLocatePaper.JPG Graphic file (type jpg)
 
 <use ./Graphs/UseCaseDiagramforLocatePaper.JPG>
 Package pdftex.def Info: ./Graphs/UseCaseDiagramforLocatePaper.JPG used on inpu
-t line 880.
+t line 879.
 (pdftex.def)             Requested size: 446.9055pt x 370.96127pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 880--882
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 879--881
 [][] 
  []
 
 [20 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UseCaseforLogIn.
 JPG>]
-<./Graphs/UseCaseforManipulatePaper.JPG, id=475, 461.47406pt x 381.67593pt>
+<./Graphs/UseCaseforManipulatePaper.JPG, id=595, 461.47406pt x 381.67593pt>
 File: ./Graphs/UseCaseforManipulatePaper.JPG Graphic file (type jpg)
 
 <use ./Graphs/UseCaseforManipulatePaper.JPG>
 Package pdftex.def Info: ./Graphs/UseCaseforManipulatePaper.JPG used on input l
-ine 887.
+ine 886.
 (pdftex.def)             Requested size: 446.9055pt x 369.62535pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 887--889
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 886--888
 [][] 
  []
 
 [21 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UseCaseDiagramfo
 rLocatePaper.JPG>]
-<./Graphs/UseCasediagramforViewAuthorList.JPG, id=480, 459.21562pt x 380.92313p
+<./Graphs/UseCasediagramforViewAuthorList.JPG, id=600, 459.21562pt x 380.92313p
 t>
 File: ./Graphs/UseCasediagramforViewAuthorList.JPG Graphic file (type jpg)
  <use ./Graphs/UseCasediagramforViewAuthorList.JPG>
 Package pdftex.def Info: ./Graphs/UseCasediagramforViewAuthorList.JPG used on i
-nput line 895.
+nput line 894.
 (pdftex.def)             Requested size: 446.9055pt x 370.73302pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 895--896
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 894--895
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 895--896
+Underfull \hbox (badness 10000) in paragraph at lines 894--895
 
  []
 
 [22 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UseCaseforManipu
 latePaper.JPG>]
-<./Graphs/UserRegistration.png, id=486, 524.71031pt x 577.40718pt>
+<./Graphs/UserRegistration.png, id=606, 524.71031pt x 577.40718pt>
 File: ./Graphs/UserRegistration.png Graphic file (type png)
 
 <use ./Graphs/UserRegistration.png>
-Package pdftex.def Info: ./Graphs/UserRegistration.png used on input line 903.
+Package pdftex.def Info: ./Graphs/UserRegistration.png used on input line 902.
 (pdftex.def)             Requested size: 446.9055pt x 491.80283pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 903--904
+Underfull \hbox (badness 10000) in paragraph at lines 902--903
 
  []
 
 [23 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UseCasediagramfo
 rViewAuthorList.JPG>]
-<./Graphs/UserLogin.png, id=491, 477.28313pt x 577.40718pt>
+<./Graphs/UserLogin.png, id=611, 477.28313pt x 577.40718pt>
 File: ./Graphs/UserLogin.png Graphic file (type png)
 
 <use ./Graphs/UserLogin.png>
-Package pdftex.def Info: ./Graphs/UserLogin.png used on input line 906.
+Package pdftex.def Info: ./Graphs/UserLogin.png used on input line 905.
 (pdftex.def)             Requested size: 446.9055pt x 540.65712pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 906--907
+Underfull \hbox (badness 10000) in paragraph at lines 905--906
 
  []
 
 [24 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UserRegistration
 .png>]
-<./Graphs/CreateRemoveResearchPublication.png, id=496, 609.02531pt x 635.37375p
+<./Graphs/CreateRemoveResearchPublication.png, id=616, 609.02531pt x 635.37375p
 t>
 File: ./Graphs/CreateRemoveResearchPublication.png Graphic file (type png)
  <use ./Graphs/CreateRemoveResearchPublication.png>
 Package pdftex.def Info: ./Graphs/CreateRemoveResearchPublication.png used on i
-nput line 909.
+nput line 908.
 (pdftex.def)             Requested size: 446.9055pt x 466.25243pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 909--910
+Underfull \hbox (badness 10000) in paragraph at lines 908--909
 
  []
 
 [25 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/UserLogin.png>]
-<./Graphs/ViewModifyResearchPublication.png, id=501, 540.51938pt x 649.67719pt>
+<./Graphs/ViewModifyResearchPublication.png, id=621, 540.51938pt x 649.67719pt>
 File: ./Graphs/ViewModifyResearchPublication.png Graphic file (type png)
 <use ./Graphs/ViewModifyResearchPublication.png>
 Package pdftex.def Info: ./Graphs/ViewModifyResearchPublication.png used on inp
-ut line 912.
+ut line 911.
 (pdftex.def)             Requested size: 446.9055pt x 537.16997pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--913
+Underfull \hbox (badness 10000) in paragraph at lines 911--912
 
  []
 
 [26 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/CreateRemoveRese
 archPublication.png>]
-<./Graphs/DomainModel.png, id=506, 824.07875pt x 623.32875pt>
+<./Graphs/DomainModel.png, id=626, 824.07875pt x 623.32875pt>
 File: ./Graphs/DomainModel.png Graphic file (type png)
 
 <use ./Graphs/DomainModel.png>
-Package pdftex.def Info: ./Graphs/DomainModel.png used on input line 916.
+Package pdftex.def Info: ./Graphs/DomainModel.png used on input line 915.
 (pdftex.def)             Requested size: 446.9055pt x 338.03821pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 916--917
+Underfull \hbox (badness 10000) in paragraph at lines 915--916
 
  []
 
 [27 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/ViewModifyResear
-chPublication.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 930.
- [28 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Graphs/DomainModel.png
- (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 930.
+chPublication.png>] [28 <C:/Users/Muller/Documents/GitHub/Team-Kilo-Phase-1/Gra
+phs/DomainModel.png (PNG copy)>]
+File: ./Graphs/UPLogo2012.jpg Graphic file (type jpg)
+ <use ./Graphs/UPLogo2012.jpg>
+Package pdftex.def Info: ./Graphs/UPLogo2012.jpg used on input line 951.
+(pdftex.def)             Requested size: 446.9055pt x 118.64651pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1059 		\end{titlepage}
+                         [1]pdfTeX warning (ext4): destination with the same id
+entifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1099 				\end{enumerate}
+                           [1]pdfTeX warning (ext4): destination with the same 
+identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1127 					\item T
+                   he system should be well documented so as to ensure futur...
+[2]
+Overfull \hbox (11.07863pt too wide) in paragraph at lines 1154--1156
+[]\OT1/cmr/m/n/12 Scalability This can be quan-ti-fied in terms of the num-ber 
+of con-cur-rent re-quests/users
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1156 			\begin{enumerate}
+                            [3]pdfTeX warning (ext4): destination with the same
+ identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1194 		\end{enumerate}
+                         [4]pdfTeX warning (ext4): destination with the same id
+entifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1227 
+        [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1287.
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1287 \end{document}
+                      [6]pdfTeX warning (ext4): destination with the same ident
+ifier (name{page.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1287 \end{document}
+                      [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1287.
 
 ("C:\Users\Muller\Documents\GitHub\Team-Kilo-Phase-1\COS301 Mini Project.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 930.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 930.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1287.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1287.
+
 Package rerunfilecheck Info: File `COS301*Mini*Project.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 930.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1287.
  ) 
 Here is how much of TeX's memory you used:
- 5499 strings out of 493921
- 83584 string characters out of 3144874
- 159572 words of memory out of 3000000
- 8492 multiletter control sequences out of 15000+200000
+ 5588 strings out of 493921
+ 84708 string characters out of 3144874
+ 159570 words of memory out of 3000000
+ 8516 multiletter control sequences out of 15000+200000
  9750 words of font info for 34 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  29i,6n,28p,529b,608s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -625,9 +678,9 @@ public/amsfonts/cm/cmcsc10.pfb><C:/Users/Muller/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Muller/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Muller/AppD
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "COS301 Mini Project.pdf" (31 pages, 884278 bytes).
+Output written on "COS301 Mini Project.pdf" (39 pages, 919463 bytes).
 PDF statistics:
- 589 PDF objects out of 1000 (max. 8388607)
- 254 named destinations out of 1000 (max. 500000)
- 368 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 789 PDF objects out of 1000 (max. 8388607)
+ 319 named destinations out of 1000 (max. 500000)
+ 560 words of extra memory for PDF output out of 10000 (max. 10000000)
 
