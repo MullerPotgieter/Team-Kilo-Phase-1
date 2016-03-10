@@ -1,0 +1,8 @@
+Performance Tactics 
+
+		Communication Channels
+			Multi-threading will be used to ensure that more then one users can access the system at the same time.
+			Caching will be used, to avoid continuios transmition of information from the server. This will allow more users to access information from thre system.
+
+		Blocked Time 
+			This system will allow 100 users to work concurrently, if more users try to access the system, their request will be blocked for a certain amount of time. 			(sceduling algorithms to be used).
