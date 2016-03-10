@@ -12,4 +12,26 @@ The Model is interconnected with the Control, which is presented as an interface
 
   1.2.1.2 View The view is the outcome presented to the user, through the browser client and is delivered through the controller.
 
-1.2.1.3 Controller The Controller is the controlling mechanism in the system which provides functionality and updates to the views of the system. Controller 
+1.2.1.3 Controller The Controller is the controlling mechanism in the system which provides functionality and updates to the views of the 
+system. Controller is through the main Server where most of the users send requests that are processed through to the View.
+
+reasons to use MVC:
+It produces a product to the end user up front, letting the user to only interact with the system through
+encapsulation of those requests. Thus letting only the user be concerned with whats presented to them. 
+
+1.2.2 Multitier architecture
+  The multitier architecture to be implemented is the three-tier architecture as, it serves a client-server architecture.
+  This allows the presentation, application processing and data management to be functions that are physically separated, 
+  done at different ends.
+  
+  This architecture pattern provides a model that lets developers create flexible and reusable applications. 
+  it can be broken down to 3 tiers, 
+  
+   1.2.2.1 Presentation tier(presentation) User interface; presenting information, tasks and results that the
+    user can understand and make use of.
+     
+   1.2.2.2 Logic tier(application) processes commands, perform calculations, then providing a way to move processed data 
+   between the surrounding tiers namely, Presentation and Logic.
+     
+    1.2.2.3 Data tier(Database)  this is where the information is stored, retrieved from a database system. making its way 
+    to the logic tier, being processed in the logic tier then to the user interface.
