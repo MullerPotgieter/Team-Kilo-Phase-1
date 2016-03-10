@@ -1,0 +1,8 @@
+Recover From Attack or Malfunction 
+
+			If there is a problem with the server prevent any more users from logging in with an error message.
+			
+			Inform users who are already logged in that there is a problem via an error message.
+			
+			Once the problem has been solve the users who are logged in will be asked to provide their credentials and they will be validated again.
+			  	Even though they are logging in again their state should be saved so that they can carry on where they left off.
