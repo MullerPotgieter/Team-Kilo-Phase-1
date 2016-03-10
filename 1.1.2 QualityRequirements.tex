@@ -1,0 +1,81 @@
+	\section{Quality Requirements}
+	The following assurances must be made in terms of quality, grouped by importance (each are explained along with the enumeration and classification):
+		
+	\subsection{Critical importance}
+		\begin{itemize}
+			\item Performance
+			This can be quantified in terms of average time taken to load a resource. It is considered critical as it allows the users in question to use the program fluidly.
+			\begin{enumerate}
+				\item The server must always provide the minimum data required to fulfill a request. That is to say, were a user to log in to the system, the server should only send the data pertaining to that user to be displayed, no papers related to his/her co-authors or other related parties. 
+				\item The system must be created with the most minimal and efficient coding practices possible, given that the result must still be reliable and robust.
+				\item No actual files are to be stored in the system, lest it negatively affect the performance components of the system itself.
+			\end{enumerate}
+			\item Reliability
+			This can be quantified in terms of the number of potential data loss points in the system (which should be minimized). It is considered critical as there is sensitive information being stored in this system and it should not be possible to incur any major losses.
+			\begin{enumerate}
+				\item The system must be thoroughly tested on both the client and server side, to ensure it will not cause faults or problems. It is important that no data is lost, thus the coding used to create the system must be defensive and thorough.
+			\end{enumerate}
+			\item Security
+			This can be quantified in terms of number of potential weaknesses in the system (which should be minimized). It is considered critical as the files in question are potentially sensitive documents and relate to the livelihood and careers of the users, thus they should not be able to be modified by an untrusted source.
+			\begin{enumerate}
+				\item It should not be possible for individuals other than the actual Users to access or modify the system. This means that security has to be ensured in terms of password storage, secure login methods and user management (methods such as re-obtaining password via email should be very carefully guarded).
+				\item It should not be possible for Users to make changes to other Users' details, as it is with non-User Authors, unless they are one of a select few Super Users or Administrators.
+				\item A publication should not be able to be removed from a system, only edited, unless it is removed by an aforementioned Super User.
+				\item A User should not be capable of viewing or editing a publication for which they are not on the list of Authors.
+			\end{enumerate}
+			\item Monitorability
+			This can be quantified in terms of the number of logged/recorded actions. It is considered critical as there should be a minimal amount of uknown activity on this system, due to its sensitive nature. 
+			\begin{enumerate}
+				\item All actions taken that have any affect on the databases stored server side are to be logged.
+				\item All logs, current connections and current activity must be viewable by the Super Users in charge of the system.
+			\end{enumerate}
+			\item Flexibility
+			\begin{enumerate}
+				\item The system should be capable of reacting quickly to different stimuli. This means (as an example) that if multiple users are concurrently using the system and performing vastly differing tasks which make use of completely different parts of the same system, there should not be any noticeable loss of performance.
+				\item The system should be able to perform well even under bulk loads, without loss of data on the way.
+				\item It should be possible to add new components or fields to existing components in the system without making major changes. 
+			\end{enumerate}
+		\end{itemize}
+	\subsection{Important}
+		\begin{itemize}
+			\item Maintainability
+			This can be quantified in terms of average number of changes needed in the system to keep it up to date over the course of a period of time (likely monthly, quarterly, semi-annually or annually). It is considered of average importance as it is a factor one should always pay attention to, however it does not play a uniquely important part in the particular project. 
+			\begin{enumerate}
+				\item The system should be developed with current and maintained technologies, so as to avoid loss of support for as long as possible.
+				\item The system should be well documented so as to ensure future developers on the system are capable of maintaining the system without worry.
+				\item When changes are made in current technologies, the system should be updated as soon as possible to reflect relevant changes.
+				\item The modular design of the system must be such that if changes must be made to a part of the system, only that part itself should be changed.
+			\end{enumerate}
+			\item Integrability
+			This can be quantified in terms of the number of potential frameworks, tools and plugins that can be added or plugged into the system successfully. It is considered of average importance as one should always ensure integrability exists in a system, however there are not a large quantity of systems that must be dealt with for this system.
+			\begin{enumerate}
+				\item The system should be designed in such a manner (with modularity and common interfacing methods) that it is capable of having pieces or services plugged in and catered to with minimal effort, such as e-mail notification, which could be a logical future addition to the system for the sake of deadline maintenance.
+			\end{enumerate}
+			\item Cost
+			This can be quantified quite simply in terms of money spent to get the system operational. It is considered of average importance, as it is a natural concern for any project, however this project's expenses are not high enough to warrant spending excessive effort minimizing it.
+			\begin{enumerate}
+				\item The tools used to design the system should, as far as possible be open source, free and not require a license.
+				\item In certain cases, paid and licensed software may be suitable for some individual pieces of the system, such as having a Database Management System (DBMS) to handle the storage of data as best possible.
+				\item Costs may be created in the form of external hosting for the web service and database storage, should the client desire it to be so.
+			\end{enumerate}
+			\item Usability
+			This can be quantified in terms of the variety of access channels available to a user, as well as the number of items visible to the user at any given time (which should be minimized). It is considered of average importance, as it is a natural part of a system which one should always focus on, however it does not require an excessive level of focus in this project compared to others.
+			\begin{enumerate}
+				\item The Users, being staff members, must have easy access from any channel.
+				\item The system should be designed in such a manner that the interface is easy to learn and use.
+				\item The system should be minimal and avoid having unnecessary visuals that could impair a User's ability to use the system comfortably.
+			\end{enumerate}
+		\end{itemize}
+	\end{itemize}
+	\subsection{Lesser Importance}
+		\begin{itemize}
+		    \item Scalability
+		    This can be quantified in terms of the number of concurrent requests/users that the system can handle. It is of lesser importance, as the current system is expected to have a minimal need to handle more than 100 people at a time, thus the system need only be a lesser degree of scalable at this point in time.
+			\begin{enumerate}
+				\item The system must be designed such that:
+				\newline
+		  			a - The client is able to handle and display details of a large, potentially infinite number of Publications.\newline
+					b - The server is able to handle, display details pertaining to large, potentially infinite number of Users, Authors and Publications.	
+				\item Modular programming should be used in order to ensure that there are no restrictions in terms of the system's ability to be extended and improved upon at later stages.
+			\end{enumerate}
+		\end{itemize}
