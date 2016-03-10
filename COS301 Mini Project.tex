@@ -183,10 +183,14 @@
 		\item A mobile application developed for Android and compatible with all current and upcoming versions thereof
 	\end{enumerate}
 	
-	This will be accomplished by making use of RESTful web services (these being based on the REST, or REpresentational State Transfer architecture). The system itself will accept HTTP requests from any of these channels
+	\begin{flushleft}
+		This will be accomplished by making use of RESTful web services (these being based on the REST, or REpresentational State Transfer architecture). The system itself will accept HTTP requests from any of these channels
 	and create responses in the form of JSON strings, a format easily handled in any one of the aforementioned access
 	systems.
+	
 	Additionally, the following access channels can be added:
+	\end{flushleft}
+	
 	\begin{enumerate}
 		\item A command line (terminal) based version of the desktop application, which could be suitable for the target
 		audience, who are very technologically capable
@@ -284,8 +288,9 @@
 		\item An over reliance on external systems should be avoided and the integration between systems must be fluid and as loosely coupled as possible.
 	\end{enumerate}
 	
-	\subsection{Architecture Constrains}
-			\subsubsection{ Since the system will be web-based, technologies that guide in building web pages will be needed, i.e.:}
+	\subsection{Architectural Constraints}
+			\subsubsection{Technologies}
+		Since the system will be web-based, technologies that guide in building web pages will be needed, i.e.:
 		
 		\begin{itemize} 
 			\item HTML 5
@@ -309,16 +314,17 @@
 			Users,
 			Authors and Co-Authors
 		\end{itemize}
-		
-		
-		The system will also have an Android application version. The technologies that will be used are:
-			\begin{itemize} 
-		\item Android Studios
-		\newline
-		This will be the main technology used to build the main functionality of the system.
-		
-		\item Programming languages like Java, C++ and C will be used to assist in building the Android version of the system  
-		\end{itemize} 
+				
+		\begin{flushleft}
+			The system will also have an Android application version. The technologies that will be used are:
+		\end{flushleft}
+		\begin{itemize} 
+			\item Android Studios
+			\newline
+			This will be the main technology used to build the main functionality of the system.
+			
+			\item Programming languages like Java, C++ and C will be used to assist in building the Android version of the system  
+			\end{itemize} 
 		
 		\subsubsection{ Architecture Patterns / Framework }
 		
@@ -1085,19 +1091,22 @@ Figure 5.3.3: Send Paper
 			
 			\subsubsection{Critical importance}
 			\begin{itemize}
-				\item Performance
+				\item \textbf{Performance}
+				
 				This can be quantified in terms of average time taken to load a resource. It is considered critical as it allows the users in question to use the program fluidly.
 				\begin{enumerate}
 					\item The server must always provide the minimum data required to fulfill a request. That is to say, were a user to log in to the system, the server should only send the data pertaining to that user to be displayed, no papers related to his/her co-authors or other related parties. 
 					\item The system must be created with the most minimal and efficient coding practices possible, given that the result must still be reliable and robust.
 					\item No actual files are to be stored in the system, lest it negatively affect the performance components of the system itself.
 				\end{enumerate}
-				\item Reliability
+				\item \textbf{Reliability}
+				
 				This can be quantified in terms of the number of potential data loss points in the system (which should be minimized). It is considered critical as there is sensitive information being stored in this system and it should not be possible to incur any major losses.
 				\begin{enumerate}
 					\item The system must be thoroughly tested on both the client and server side, to ensure it will not cause faults or problems. It is important that no data is lost, thus the coding used to create the system must be defensive and thorough.
 				\end{enumerate}
-				\item Security
+				\item \textbf{Security}
+				
 				This can be quantified in terms of number of potential weaknesses in the system (which should be minimized). It is considered critical as the files in question are potentially sensitive documents and relate to the livelihood and careers of the users, thus they should not be able to be modified by an untrusted source.
 				\begin{enumerate}
 					\item It should not be possible for individuals other than the actual Users to access or modify the system. This means that security has to be ensured in terms of password storage, secure login methods and user management (methods such as re-obtaining password via email should be very carefully guarded).
@@ -1105,13 +1114,14 @@ Figure 5.3.3: Send Paper
 					\item A publication should not be able to be removed from a system, only edited, unless it is removed by an aforementioned Super User.
 					\item A User should not be capable of viewing or editing a publication for which they are not on the list of Authors.
 				\end{enumerate}
-				\item Monitorability
+				\item\textbf{ Monitorability}
+				
 				This can be quantified in terms of the number of logged/recorded actions. It is considered critical as there should be a minimal amount of uknown activity on this system, due to its sensitive nature. 
 				\begin{enumerate}
 					\item All actions taken that have any affect on the databases stored server side are to be logged.
 					\item All logs, current connections and current activity must be viewable by the Super Users in charge of the system.
 				\end{enumerate}
-				\item Flexibility
+				\item \textbf{Flexibility}
 				\begin{enumerate}
 					\item The system should be capable of reacting quickly to different stimuli. This means (as an example) that if multiple users are concurrently using the system and performing vastly differing tasks which make use of completely different parts of the same system, there should not be any noticeable loss of performance.
 					\item The system should be able to perform well even under bulk loads, without loss of data on the way.
@@ -1120,7 +1130,8 @@ Figure 5.3.3: Send Paper
 			\end{itemize}
 			\subsubsection{Important}
 			\begin{itemize}
-				\item Maintainability
+				\item \textbf{Maintainability}
+				
 				This can be quantified in terms of average number of changes needed in the system to keep it up to date over the course of a period of time (likely monthly, quarterly, semi-annually or annually). It is considered of average importance as it is a factor one should always pay attention to, however it does not play a uniquely important part in the particular project. 
 				\begin{enumerate}
 					\item The system should be developed with current and maintained technologies, so as to avoid loss of support for as long as possible.
@@ -1128,19 +1139,22 @@ Figure 5.3.3: Send Paper
 					\item When changes are made in current technologies, the system should be updated as soon as possible to reflect relevant changes.
 					\item The modular design of the system must be such that if changes must be made to a part of the system, only that part itself should be changed.
 				\end{enumerate}
-				\item Integrability
+				\item \textbf{Integrability}
+				
 				This can be quantified in terms of the number of potential frameworks, tools and plugins that can be added or plugged into the system successfully. It is considered of average importance as one should always ensure integrability exists in a system, however there are not a large quantity of systems that must be dealt with for this system.
 				\begin{enumerate}
 					\item The system should be designed in such a manner (with modularity and common interfacing methods) that it is capable of having pieces or services plugged in and catered to with minimal effort, such as e-mail notification, which could be a logical future addition to the system for the sake of deadline maintenance.
 				\end{enumerate}
-				\item Cost
+				\item \textbf{Cost}
+				
 				This can be quantified quite simply in terms of money spent to get the system operational. It is considered of average importance, as it is a natural concern for any project, however this project's expenses are not high enough to warrant spending excessive effort minimizing it.
 				\begin{enumerate}
 					\item The tools used to design the system should, as far as possible be open source, free and not require a license.
 					\item In certain cases, paid and licensed software may be suitable for some individual pieces of the system, such as having a Database Management System (DBMS) to handle the storage of data as best possible.
 					\item Costs may be created in the form of external hosting for the web service and database storage, should the client desire it to be so.
 				\end{enumerate}
-				\item Usability
+				\item \textbf{Usability}
+				
 				This can be quantified in terms of the variety of access channels available to a user, as well as the number of items visible to the user at any given time (which should be minimized). It is considered of average importance, as it is a natural part of a system which one should always focus on, however it does not require an excessive level of focus in this project compared to others.
 				\begin{enumerate}
 					\item The Users, being staff members, must have easy access from any channel.
@@ -1151,7 +1165,8 @@ Figure 5.3.3: Send Paper
 		%\end{itemize}
 		\subsubsection{Lesser Importance}
 		\begin{itemize}
-			\item Scalability
+			\item \textbf{Scalability}
+			
 			This can be quantified in terms of the number of concurrent requests/users that the system can handle. It is of lesser importance, as the current system is expected to have a minimal need to handle more than 100 people at a time, thus the system need only be a lesser degree of scalable at this point in time.
 			\begin{enumerate}
 				\item The system must be designed such that:
@@ -1185,7 +1200,7 @@ Figure 5.3.3: Send Paper
 	\begin{itemize}
 		\item HTTP - Hypertext Transfer Protocol
 		\begin{enumerate}
-			\item Used to transfer data, as well as respond to http requests.
+			\item Used to transfer data, as well as respond to HTTP requests.
 		\end{enumerate}
 		\item IP - Internet Protocol
 		\begin{enumerate}
@@ -1194,10 +1209,93 @@ Figure 5.3.3: Send Paper
 		\end{enumerate}
 	\end{itemize}
 	
-\subsection{Architectural constraints}
+\subsection{Architectural Constraints}
+
+\begin{flushleft}
+		This section describes the architectural constraints that have been imposed by the client:
+	
+	\subsubsection{System Architecture}
+	
+	\begin{itemize}
+		\item 	\textbf{Java Platform, Enterprise Edition (Java EE)}
+			
+		Provide an API and a runtime environment for the development and deployment of the research portal system. 
+	\end{itemize}
+	
+	\subsubsection{Particular Technologies}
+	
+	\begin{itemize}
+		\item \textbf{Java}
+		
+	Used as the primary programming language for building and developing the Android application version of the system.
+	Due to its concurrent, class-based, object-oriented implementation, with few dependency implementations and offers platform independence for the research portal.
+	\end{itemize}
+		
+	\begin{itemize}
+		\item \textbf{HTML 5 \& CSS3}
+		
+	Used to markup the layout and presentation of the research portal web page, with improved support for the latest multimedia and providing scripting APIs that can be used with JavaScript.
+	\end{itemize}
+		
+	\begin{itemize}
+		\item 	\textbf{Bootstrap (Front-end Framework)}
+			
+		Used for styling the research portal web page by utilizing HTML and CSS based design templates and  JavaScript extensions. 
+		This will ease the development of research portal, to create a dynamic and responsive web page across different devices.
+	\end{itemize}
+	
+\begin{itemize}
+	\item 	\textbf{Apache HTTP Server 2.4}	
+	
+	Used as the web server software that will process requests via HTTP for the distribution of information on the web.
+\end{itemize}
+	
+\begin{itemize}
+	\item 	\textbf{JavaScript and jQuery}	
+	
+	Used for client-side validation of data before being sent server-side, with the use of jQuery JavaScript library, which is designed to simplify client-side scripting.
+\end{itemize}
+	
+\begin{itemize}
+	\item 	\textbf{PHP 5.6}
+		
+	Provides improved support for object-oriented programming, PHP Data Objects (PDO) extension and performance enhancements over previous versions. 
+	It will primarily be used for server-side validation of data and is also supported by Apache HTTP Server.
+\end{itemize}
+	
+\begin{itemize}
+	\item 	\textbf{MySQL}
+		
+	Used as the relational DBMS for the storage of data into the database. 
+\end{itemize}
+	
+	\begin{itemize}
+		\item \textbf{Google Material Design}	
+		
+	Used to create the aesthetic design of the Android application, which allows for a single unified experience across platforms and device sizes.
+	\end{itemize}
+	
+	\subsubsection{Operating Systems and/or Devices}
+	
+	\begin{itemize}
+		\item \textbf{Desktop Independent Web Browser Compatibility}
+	
+	Since the research portal will primarily be accessed via the web, compatibility will be catered to most major browsers (Microsoft Internet Explorer, Google Chrome, Mozilla Firefox, Apple Safari, Opera). 
+	
+	Consequently, this allows for cross platform operating system compatibility for desktop operating systems (Microsoft Windows, Mac OSX, Linux) and mobile operating systems (Android, iOS, BlackBerry).
+	\end{itemize}
+	
+\begin{itemize}
+	\item 	\textbf{Android Application Compatibility}
+		
+	The Android application version of the research portal will be available for versions Android 4.0 IceCreamSandwich (API level 14) to Android 6.0 Marshmallow (API level 23).
+	
+	The application is intended for touchscreen mobile devices such as Android-compatible smart phones and tablets.
+\end{itemize} 
+\end{flushleft}
 
 
-\section{Architectural patterns or styles}
+\section{Architectural Patterns or Styles}
 This section describes the architectural patterns that will be employed by the project.
 Some will be implicitly employed by the system as the system is being development.
 
@@ -1215,7 +1313,6 @@ The Controller is the controlling mechanism in the system which provides functio
 system. Controller is through the main Server where most of the users send requests that are processed through to the View.
 
 
-
 \subsection{Reasons to use MVC}
 It produces a product to the end user up front, letting the user to only interact with the system through
 encapsulation of those requests. Thus letting only the user be concerned with whats presented to them. 
@@ -1228,13 +1325,13 @@ done at different ends.
 This architecture pattern provides a model that lets developers create flexible and reusable applications. 
 it can be broken down to 3 tiers: 
 
-\subsubsection{Presentation tier(presentation)}
+\subsubsection{Presentation tier (Presentation)}
 User interface; presenting information, tasks and results that the
 user can understand and make use of.
-\subsubsection{Logic tier(application)}
+\subsubsection{Logic tier (Application)}
 Processes commands, perform calculations, then providing a way to move processed data 
 between the surrounding tiers namely, Presentation and Logic.
-\subsubsection{ Data tier(Database)}
+\subsubsection{ Data tier (Database)}
 This is where the information is stored, retrieved from a database system. making its way 
 to the logic tier, being processed in the logic tier then to the user interface.
 
@@ -1246,9 +1343,9 @@ to the logic tier, being processed in the logic tier then to the user interface.
 
 
 
-		\section{Architectural tactics or strategies}
+		\section{Architectural Tactics or Strategies}
 		
-		\section{Use of reference architectures and frameworks}
+		\section{Use of Reference Architectures and Frameworks}
 			\begin{enumerate}
 				\item  The Java Platform, Enterprise Edition (Java EE) architecture is a layered reference architecture which provides a template solution for many enterprise systems developed in Java.
 				\item  The .NET Framework should also be used, 
@@ -1268,7 +1365,7 @@ to the logic tier, being processed in the logic tier then to the user interface.
 		
 		
 		
-		\section{Access and integration channels}
+		\section{Access and Integration Channels}
 		\section{Technologies}
 		 
 

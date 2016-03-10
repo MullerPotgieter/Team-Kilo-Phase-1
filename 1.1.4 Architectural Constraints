@@ -1,49 +1,84 @@
-1.4. Architectural Constraints
+\subsection{Architectural Constraints}
 
-This section describes the architectural constraints that have been imposed by the client:
-
-1.4.1. System Architecture
-
-Java Platform, Enterprise Edition (Java EE)
-Provide an API and a runtime environent for the delvelopment and deployment of the research portal system. 
-
-1.4.2. Particular Technologies
-
-Java
-Used as the primary programming language for building and developing the Android application version of the system.
-Due to its concurrent, class-based, object-oriented implemetation, with few dependency implementations and offers platform independence for the reasearch portal.
-
-HTML 5 & CSS3
-Used to markup the layout and presentation of the research portal web page, with improved support for the latest multimedia and providing scripting APIs that can be used with javaScript.
-
-Bootstrap (front-end framework)
-Used for styling the research portal web page by utilizing HTML and CSS based design templates and  JavaScript extentions. 
-This will ease the development of research portal, to create a dynamic and responsive web page across different devices.
-
-Apache HTTP Server 2.4
-Used as the web server software that will process requests via HTTP for the distribution of information on the web.
-
-JavaScript and jQuery
-Used for client-side validation of data before being sent server-side, with the use of jQuery JavaScript library, which is designed to simplify client-side scripting.
-
-PHP 5.6
-Provides improved support for object-oriented programming, PHP Data Objects (PDO) extension and performance enhancements over previous versions. 
-It will primarily be used for server-side validation of dats and is also supported by Apache HTTP Server.
-
-MySQL
-Used as the relational DBMS for the storage of data into the database. 
-
-Google Material Design
-Used to create the asthetic design of the Andriod application, which allows for a single unified experiecne across platforms and device sizes.
-
-1.4.3 Operating Systems and/or Devices
-
-Desktop Independent Web Browser Compatibility
-Since the research portal will primarily be accessed via the web, compatibility will be catered to most major browsers (Microsoft Internet Explorer, Google Chrome, Mozilla Firefox, Apple Safari, Opera). 
-Consequently, this allows for cross platform operating system compatibilty for desktop operating systems (Microsoft Windwows, Mac OSX, Linux) and mobile operating systems (Android, iOS, BlackBerry).
-
-Android Application Compatibility
-The Android application version of the research portal will be available for versions Android 4.0 IceCreamSandwich (API level 14) to Android 6.0 Marshmallow (API level 23).
-The application is indended for touchscreen mobile devices such as Android-compatible smartphones and tablets. 
-
-
+\begin{flushleft}
+		This section describes the architectural constraints that have been imposed by the client:
+	
+	\subsubsection{System Architecture}
+	
+	\begin{itemize}
+		\item 	\textbf{Java Platform, Enterprise Edition (Java EE)}
+			
+		Provide an API and a runtime environment for the development and deployment of the research portal system. 
+	\end{itemize}
+	
+	\subsubsection{Particular Technologies}
+	
+	\begin{itemize}
+		\item \textbf{Java}
+		
+	Used as the primary programming language for building and developing the Android application version of the system.
+	Due to its concurrent, class-based, object-oriented implementation, with few dependency implementations and offers platform independence for the research portal.
+	\end{itemize}
+		
+	\begin{itemize}
+		\item \textbf{HTML 5 \& CSS3}
+		
+	Used to markup the layout and presentation of the research portal web page, with improved support for the latest multimedia and providing scripting APIs that can be used with JavaScript.
+	\end{itemize}
+		
+	\begin{itemize}
+		\item 	\textbf{Bootstrap (Front-end Framework)}
+			
+		Used for styling the research portal web page by utilizing HTML and CSS based design templates and  JavaScript extensions. 
+		This will ease the development of research portal, to create a dynamic and responsive web page across different devices.
+	\end{itemize}
+	
+\begin{itemize}
+	\item 	\textbf{Apache HTTP Server 2.4}	
+	
+	Used as the web server software that will process requests via HTTP for the distribution of information on the web.
+\end{itemize}
+	
+\begin{itemize}
+	\item 	\textbf{JavaScript and jQuery}	
+	
+	Used for client-side validation of data before being sent server-side, with the use of jQuery JavaScript library, which is designed to simplify client-side scripting.
+\end{itemize}
+	
+\begin{itemize}
+	\item 	\textbf{PHP 5.6}
+		
+	Provides improved support for object-oriented programming, PHP Data Objects (PDO) extension and performance enhancements over previous versions. 
+	It will primarily be used for server-side validation of data and is also supported by Apache HTTP Server.
+\end{itemize}
+	
+\begin{itemize}
+	\item 	\textbf{MySQL}
+		
+	Used as the relational DBMS for the storage of data into the database. 
+\end{itemize}
+	
+	\begin{itemize}
+		\item \textbf{Google Material Design}	
+		
+	Used to create the aesthetic design of the Android application, which allows for a single unified experience across platforms and device sizes.
+	\end{itemize}
+	
+	\subsubsection{Operating Systems and/or Devices}
+	
+	\begin{itemize}
+		\item \textbf{Desktop Independent Web Browser Compatibility}
+	
+	Since the research portal will primarily be accessed via the web, compatibility will be catered to most major browsers (Microsoft Internet Explorer, Google Chrome, Mozilla Firefox, Apple Safari, Opera). 
+	
+	Consequently, this allows for cross platform operating system compatibility for desktop operating systems (Microsoft Windows, Mac OSX, Linux) and mobile operating systems (Android, iOS, BlackBerry).
+	\end{itemize}
+	
+\begin{itemize}
+	\item 	\textbf{Android Application Compatibility}
+		
+	The Android application version of the research portal will be available for versions Android 4.0 IceCreamSandwich (API level 14) to Android 6.0 Marshmallow (API level 23).
+	
+	The application is intended for touchscreen mobile devices such as Android-compatible smart phones and tablets.
+\end{itemize} 
+\end{flushleft}
