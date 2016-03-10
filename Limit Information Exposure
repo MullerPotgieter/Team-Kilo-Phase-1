@@ -1,0 +1,8 @@
+	Limit Information Exposure 
+	
+			User passwords will be stored on the database using hashing algorithms, incase another party gets access to the database.
+
+			User credentials will be validated on the client side (Java Script) and on the erver side (PHP).
+				This will protect the system incase the information gets corrupted or intercepted during transfer.
+
+			During validation we will also check that user input is not SQL injection code as an extra means of protecting information on the database.
