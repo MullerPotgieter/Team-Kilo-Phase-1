@@ -1,0 +1,84 @@
+
+Architectural Tactics or Strategies
+
+    Security Tactics
+
+        Limit User Access
+
+            Upon opening the system (Website or Andriod Application) the user will be asked to login (Username and password).
+
+            The user's credentials will be authenticated (check if they matches the information in the database).
+
+            Once the user is authorized they will only have access to information about papers that they are co-authoring (I.e Co-Author's details and metadata about the papers).
+            
+            
+        Limit Information Exposure
+
+            User passwords will be stored on the database using hashing algorithms, in case another party gets access to the database.
+
+            User credentials will be validated on the client side (Javascript) and on the server side (PHP).
+
+                This will protect the system in case the information gets corrupted or intercepted during transfer.
+
+
+            During validation we will also check that user input is not SQL injection code as an extra means of protecting information on the database.
+
+        Recover From Attack / Malfunction
+
+            If there is a problem with the server prevent any more users from logging in with an error message.
+
+            Inform users who are already logged in that there is a problem via an error message.
+
+            Once the problem has been solve the users who are logged in will be asked to provide their credentials and they will be validated again.
+
+                Even though they are logging in again their state should be saved so that they can carry on where they left off.
+
+    Performance Tactics
+
+        Communication Channels
+
+            Multi-threading will be used to ensure that more than one users can access the system at the same time.
+
+            Caching will be used, to avoid continuous transmission of information from the server. This will allow more users to access information from the system.
+
+        Blocked Time
+
+            This system will allow 100 users to work concurrently, if more users try to access the system, their request will be blocked for a certain amount of time.             (scheduling algorithms to be used).
+
+    Reliability
+
+        Resource locking
+
+            Lock will be used to lock the section that the user is accessing/change so that no other thread/user changes the data while another user is still busy.
+
+        Removal from service
+
+            If the user is inactive for longer than 5 minutes, the system will automatically log them out.
+
+                The state should be saved, so that when the users logs on again they continue from where they left off.
+
+        
+
+        
+
+            
+
+                
+
+        
+
+            
+
+        
+
+            
+
+        
+
+
+        
+
+            
+
+            
+
