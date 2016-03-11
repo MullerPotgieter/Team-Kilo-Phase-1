@@ -1,0 +1,7 @@
+Reliability
+		Resourse locking 
+			Lock will be used to lock the section that the user is accessing/change so that no other thread/user changes the data while another user is still busy.
+			
+		Removal from service 
+			If the user is inactive for longer then 5 minitus, the system will automatically log them out. 
+				The state should be saved, so that when the users logs on again they continue from where they left off.

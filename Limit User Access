@@ -1,0 +1,7 @@
+Limit User Access
+
+	  Apon opening the system (Website or Andriod Application) the user will be asked to login (Username and password).
+
+	  The users cridentials will be authenticated (check if they matches the information in the data base).
+
+	  Once the user is authorized they will only have acess to information aboutpapers that they are co-authoring (I.e Co-Author's details and metadata about 			the papers).  
